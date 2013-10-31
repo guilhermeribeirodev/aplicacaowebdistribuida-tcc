@@ -2,6 +2,7 @@ package br.org.base.resource;
 
 import br.org.base.model.Cliente;
 import br.org.base.server.Server;
+import net.vz.mongodb.jackson.DBCursor;
 import net.vz.mongodb.jackson.JacksonDBCollection;
 import net.vz.mongodb.jackson.WriteResult;
 
@@ -58,15 +59,21 @@ public class ClienteResource implements Crud<Cliente>{
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<Cliente> readAll() {
-        List<Cliente> lst = new ArrayList<Cliente>();
 
-        for(int i=0;i<10;i++){
 
-            lst.add(new Cliente(""+i,"asdasd"));
+        List<Cliente> lista = new ArrayList<Cliente>();
+        DBCursor<Cliente> cursor = jacksonDB.find();
+
+        while (cursor.hasNext()) {
+            Cliente t = cursor.next();
+
+
+
+            lista.add(t);
         }
 
 
-        return lst;
+        return lista;
     }
 
 
@@ -75,8 +82,13 @@ public class ClienteResource implements Crud<Cliente>{
     }
 
 
-    public void delete() {
-        //To change body of implemented methods use File | Settings | File Templates.
+    @DELETE
+    @Path("{id}")
+    public void delete(@PathParam("id") String id) {
+
+        WriteResult<Cliente, String> res = jacksonDB.removeById(id);
+
+        System.out.println(res);
     }
 
 }

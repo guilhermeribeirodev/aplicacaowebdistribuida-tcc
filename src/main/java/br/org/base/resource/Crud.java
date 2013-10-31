@@ -21,7 +21,7 @@ public interface Crud<T> {
 
     public void update();
 
-    public void delete();
+    public void delete(String id);
 
 
 }

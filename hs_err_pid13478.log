@@ -1,0 +1,612 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGILL (0x4) at pc=0xb6e12e10, pid=13478, tid=3065834304
+#
+# JRE version: Java(TM) SE Runtime Environment (7.0_40-b43) (build 1.7.0_40-b43)
+# Java VM: Java HotSpot(TM) Client VM (24.0-b56 mixed mode linux-x86 )
+# Problematic frame:
+# V  [libjvm.so+0x200e10]  Events::log_exception(Thread*, char const*, ...)+0x20
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0xb6a0d000):  JavaThread "main" [_thread_in_vm, id=13479, stack(0xb6b7e000,0xb6bcf000)]
+
+siginfo:si_signo=SIGILL: si_errno=0, si_code=2 (ILL_ILLOPN), si_addr=0xb6e12e10
+
+Registers:
+EAX=0x00000000, EBX=0xb71a6868, ECX=0xb6a087a8, EDX=0x00000000
+ESP=0xb6bccca0, EBP=0xb6bcccc8, ESI=0xb6a087a8, EDI=0xb6a08d80
+EIP=0xb6e12e10, EFLAGS=0x00010286, CR2=0xb7730100
+
+Top of Stack: (sp=0xb6bccca0)
+0xb6bccca0:   b6a0d000 00000000 08f648c7 3fe5c335
+0xb6bcccb0:   a05b0f58 b6a087a8 b716a474 b71a6868
+0xb6bcccc0:   00000000 b073bdb8 b6bccfc8 b6f3c80b
+0xb6bcccd0:   b6a0d000 b7157507 a08e7448 b716a474
+0xb6bccce0:   000004dc b6bccf0c b6a0da10 b6a0da10
+0xb6bcccf0:   b6bccd80 b6bccd18 b6a0d000 b6a0da04
+0xb6bccd00:   b6bccd80 00000001 b6a0da08 b6fc3a5e
+0xb6bccd10:   b71a6868 07000000 b6bcd028 b47b041a 
+
+Instructions: (pc=0xb6e12e10)
+0xb6e12df0:   55 89 e5 57 56 53 83 ec 1c e8 00 00 00 00 5b 81
+0xb6e12e00:   c3 6a 3a 39 00 8b 83 10 f2 ff ff 80 38 00 75 08
+0xb6e12e10:   8d 65 f4 5b 5e 5f 5d c3 8b 83 d4 fa ff ff 8d 7d
+0xb6e12e20:   10 8b 30 8b 83 3c ea ff ff 8b 00 85 c0 75 e1 e8 
+
+Register to memory mapping:
+
+EAX=0x00000000 is an unknown value
+EBX=0xb71a6868: <offset 0x594868> in /usr/local/java/jdk1.7.0_40/jre/lib/i386/client/libjvm.so at 0xb6c12000
+ECX=0xb6a087a8 is an unknown value
+EDX=0x00000000 is an unknown value
+ESP=0xb6bccca0 is pointing into the stack for thread: 0xb6a0d000
+EBP=0xb6bcccc8 is pointing into the stack for thread: 0xb6a0d000
+ESI=0xb6a087a8 is an unknown value
+EDI=0xb6a08d80 is an unknown value
+
+
+Stack: [0xb6b7e000,0xb6bcf000],  sp=0xb6bccca0,  free space=315k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x200e10]  Events::log_exception(Thread*, char const*, ...)+0x20
+V  [libjvm.so+0x32a80b]  JVM_DoPrivileged+0x4eb
+C  [libjava.so+0x9a4a]  Java_java_security_AccessController_doPrivileged__Ljava_security_PrivilegedExceptionAction_2Ljava_security_AccessControlContext_2+0x3a
+j  java.security.AccessController.doPrivileged(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;+0
+j  java.net.URLClassLoader.findClass(Ljava/lang/String;)Ljava/lang/Class;+13
+j  java.lang.ClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class;+70
+j  java.lang.ClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class;+38
+j  sun.misc.Launcher$AppClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class;+36
+j  java.lang.ClassLoader.loadClass(Ljava/lang/String;)Ljava/lang/Class;+3
+v  ~StubRoutines::call_stub
+V  [libjvm.so+0x2a7875]  JavaCalls::call_helper(JavaValue*, methodHandle*, JavaCallArguments*, Thread*)+0x315
+V  [libjvm.so+0x3fa1e9]  os::os_exception_wrapper(void (*)(JavaValue*, methodHandle*, JavaCallArguments*, Thread*), JavaValue*, methodHandle*, JavaCallArguments*, Thread*)+0x19
+V  [libjvm.so+0x2a64ef]  JavaCalls::call(JavaValue*, methodHandle, JavaCallArguments*, Thread*)+0x2f
+V  [libjvm.so+0x2a672a]  JavaCalls::call_virtual(JavaValue*, KlassHandle, Symbol*, Symbol*, JavaCallArguments*, Thread*)+0x10a
+V  [libjvm.so+0x2a67f5]  JavaCalls::call_virtual(JavaValue*, Handle, KlassHandle, Symbol*, Symbol*, Handle, Thread*)+0x55
+V  [libjvm.so+0x49e559]  SystemDictionary::load_instance_class(Symbol*, Handle, Thread*)+0x489
+V  [libjvm.so+0x49cc52]  SystemDictionary::resolve_instance_class_or_null(Symbol*, Handle, Handle, Thread*)+0x742
+V  [libjvm.so+0x49d0b9]  SystemDictionary::resolve_or_null(Symbol*, Handle, Handle, Thread*)+0x49
+V  [libjvm.so+0x49e5d0]  SystemDictionary::resolve_or_fail(Symbol*, Handle, Handle, bool, Thread*)+0x30
+V  [libjvm.so+0x1d5cfb]  constantPoolOopDesc::klass_at_impl(constantPoolHandle, int, Thread*)+0x1cb
+V  [libjvm.so+0x2a2d58]  InterpreterRuntime::ldc(JavaThread*, bool)+0x208
+j  org.jvnet.hk2.component.Creators.create(Ljava/lang/Class;Lorg/jvnet/hk2/component/Habitat;Lorg/jvnet/hk2/component/MultiMap;)Lorg/jvnet/hk2/component/Creator;+1
+j  org.jvnet.hk2.component.TypeBasedBinder.registerIn(Lorg/jvnet/hk2/component/Habitat;)Lorg/jvnet/hk2/component/Inhabitant;+11
+j  org.jvnet.hk2.component.BinderFactoryImpl.registerIn(Lorg/jvnet/hk2/component/Habitat;)Lorg/glassfish/hk2/Bindings;+42
+j  org.jvnet.hk2.component.HK2ProviderImpl.create(Lorg/glassfish/hk2/Services;[Lorg/glassfish/hk2/Module;)Lorg/glassfish/hk2/Services;+127
+j  org.glassfish.hk2.HK2.create(Lorg/glassfish/hk2/Services;[Lorg/glassfish/hk2/Module;)Lorg/glassfish/hk2/Services;+6
+j  com.sun.ws.rs.ext.RuntimeDelegateImpl.<init>()V+19
+v  ~StubRoutines::call_stub
+V  [libjvm.so+0x2a7875]  JavaCalls::call_helper(JavaValue*, methodHandle*, JavaCallArguments*, Thread*)+0x315
+V  [libjvm.so+0x3fa1e9]  os::os_exception_wrapper(void (*)(JavaValue*, methodHandle*, JavaCallArguments*, Thread*), JavaValue*, methodHandle*, JavaCallArguments*, Thread*)+0x19
+V  [libjvm.so+0x2a64ef]  JavaCalls::call(JavaValue*, methodHandle, JavaCallArguments*, Thread*)+0x2f
+V  [libjvm.so+0x43f97e]  Reflection::invoke(instanceKlassHandle, methodHandle, Handle, bool, objArrayHandle, BasicType, objArrayHandle, bool, Thread*)+0x3fe
+V  [libjvm.so+0x44084e]  Reflection::invoke_constructor(oopDesc*, objArrayHandle, Thread*)+0x2de
+V  [libjvm.so+0x31e9db]  JVM_NewInstanceFromConstructor+0xdb
+C  [libjava.so+0x151eb]  Java_sun_reflect_NativeConstructorAccessorImpl_newInstance0+0x2b
+j  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Ljava/lang/reflect/Constructor;[Ljava/lang/Object;)Ljava/lang/Object;+0
+j  sun.reflect.NativeConstructorAccessorImpl.newInstance([Ljava/lang/Object;)Ljava/lang/Object;+72
+j  sun.reflect.DelegatingConstructorAccessorImpl.newInstance([Ljava/lang/Object;)Ljava/lang/Object;+5
+j  java.lang.reflect.Constructor.newInstance([Ljava/lang/Object;)Ljava/lang/Object;+79
+j  java.lang.Class.newInstance()Ljava/lang/Object;+132
+j  javax.ws.rs.ext.FactoryFinder.newInstance(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Object;+78
+j  javax.ws.rs.ext.FactoryFinder.find(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;+387
+j  javax.ws.rs.ext.RuntimeDelegate.findDelegate()Ljavax/ws/rs/ext/RuntimeDelegate;+4
+j  javax.ws.rs.ext.RuntimeDelegate.getInstance()Ljavax/ws/rs/ext/RuntimeDelegate;+22
+j  javax.ws.rs.core.UriBuilder.newInstance()Ljavax/ws/rs/core/UriBuilder;+0
+j  javax.ws.rs.core.UriBuilder.fromUri(Ljava/net/URI;)Ljavax/ws/rs/core/UriBuilder;+0
+j  javax.ws.rs.core.UriBuilder.fromUri(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;+23
+j  br.org.base.server.Server.main([Ljava/lang/String;)V+28
+v  ~StubRoutines::call_stub
+V  [libjvm.so+0x2a7875]  JavaCalls::call_helper(JavaValue*, methodHandle*, JavaCallArguments*, Thread*)+0x315
+V  [libjvm.so+0x3fa1e9]  os::os_exception_wrapper(void (*)(JavaValue*, methodHandle*, JavaCallArguments*, Thread*), JavaValue*, methodHandle*, JavaCallArguments*, Thread*)+0x19
+V  [libjvm.so+0x2a64ef]  JavaCalls::call(JavaValue*, methodHandle, JavaCallArguments*, Thread*)+0x2f
+V  [libjvm.so+0x2e28b2]  jni_invoke_static(JNIEnv_*, JavaValue*, _jobject*, JNICallType, _jmethodID*, JNI_ArgumentPusher*, Thread*)+0x242
+V  [libjvm.so+0x2f8ada]  jni_CallStaticVoidMethod+0xca
+C  [libjli.so+0x2e8d]  JavaMain+0x8bd
+C  [libpthread.so.0+0x6d78]  start_thread+0xd8
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  java.security.AccessController.doPrivileged(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;+0
+j  java.net.URLClassLoader.findClass(Ljava/lang/String;)Ljava/lang/Class;+13
+j  java.lang.ClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class;+70
+j  java.lang.ClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class;+38
+j  sun.misc.Launcher$AppClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class;+36
+j  java.lang.ClassLoader.loadClass(Ljava/lang/String;)Ljava/lang/Class;+3
+v  ~StubRoutines::call_stub
+j  org.jvnet.hk2.component.Creators.create(Ljava/lang/Class;Lorg/jvnet/hk2/component/Habitat;Lorg/jvnet/hk2/component/MultiMap;)Lorg/jvnet/hk2/component/Creator;+1
+j  org.jvnet.hk2.component.TypeBasedBinder.registerIn(Lorg/jvnet/hk2/component/Habitat;)Lorg/jvnet/hk2/component/Inhabitant;+11
+j  org.jvnet.hk2.component.BinderFactoryImpl.registerIn(Lorg/jvnet/hk2/component/Habitat;)Lorg/glassfish/hk2/Bindings;+42
+j  org.jvnet.hk2.component.HK2ProviderImpl.create(Lorg/glassfish/hk2/Services;[Lorg/glassfish/hk2/Module;)Lorg/glassfish/hk2/Services;+127
+j  org.glassfish.hk2.HK2.create(Lorg/glassfish/hk2/Services;[Lorg/glassfish/hk2/Module;)Lorg/glassfish/hk2/Services;+6
+j  com.sun.ws.rs.ext.RuntimeDelegateImpl.<init>()V+19
+v  ~StubRoutines::call_stub
+j  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Ljava/lang/reflect/Constructor;[Ljava/lang/Object;)Ljava/lang/Object;+0
+j  sun.reflect.NativeConstructorAccessorImpl.newInstance([Ljava/lang/Object;)Ljava/lang/Object;+72
+j  sun.reflect.DelegatingConstructorAccessorImpl.newInstance([Ljava/lang/Object;)Ljava/lang/Object;+5
+j  java.lang.reflect.Constructor.newInstance([Ljava/lang/Object;)Ljava/lang/Object;+79
+j  java.lang.Class.newInstance()Ljava/lang/Object;+132
+j  javax.ws.rs.ext.FactoryFinder.newInstance(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Object;+78
+j  javax.ws.rs.ext.FactoryFinder.find(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;+387
+j  javax.ws.rs.ext.RuntimeDelegate.findDelegate()Ljavax/ws/rs/ext/RuntimeDelegate;+4
+j  javax.ws.rs.ext.RuntimeDelegate.getInstance()Ljavax/ws/rs/ext/RuntimeDelegate;+22
+j  javax.ws.rs.core.UriBuilder.newInstance()Ljavax/ws/rs/core/UriBuilder;+0
+j  javax.ws.rs.core.UriBuilder.fromUri(Ljava/net/URI;)Ljavax/ws/rs/core/UriBuilder;+0
+j  javax.ws.rs.core.UriBuilder.fromUri(Ljava/lang/String;)Ljavax/ws/rs/core/UriBuilder;+23
+j  br.org.base.server.Server.main([Ljava/lang/String;)V+28
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0xb6a86000 JavaThread "Service Thread" daemon [_thread_blocked, id=13490, stack(0x9fe3b000,0x9fe8c000)]
+  0xb6a84000 JavaThread "C1 CompilerThread0" daemon [_thread_blocked, id=13489, stack(0x9fe8c000,0x9ff0d000)]
+  0xa0200800 JavaThread "JDWP Command Reader" daemon [_thread_in_native, id=13488, stack(0x9ff0d000,0x9ff5e000)]
+  0xb6a7d400 JavaThread "JDWP Event Helper Thread" daemon [_thread_blocked, id=13487, stack(0x9ff5e000,0x9ffaf000)]
+  0xb6a7ac00 JavaThread "JDWP Transport Listener: dt_socket" daemon [_thread_blocked, id=13484, stack(0x9ffaf000,0xa0000000)]
+  0xb6a70800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=13483, stack(0xa010d000,0xa015e000)]
+  0xb6a61400 JavaThread "Finalizer" daemon [_thread_blocked, id=13482, stack(0xa015e000,0xa01af000)]
+  0xb6a5ec00 JavaThread "Reference Handler" daemon [_thread_blocked, id=13481, stack(0xa01af000,0xa0200000)]
+=>0xb6a0d000 JavaThread "main" [_thread_in_vm, id=13479, stack(0xb6b7e000,0xb6bcf000)]
+
+Other Threads:
+  0xb6a5d000 VMThread [stack: 0xa0324000,0xa03a5000] [id=13480]
+  0xb6a90400 WatcherThread [stack: 0x9fdba000,0x9fe3b000] [id=13491]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 4928K, used 2403K [0xa0720000, 0xa0c70000, 0xa5c70000)
+  eden space 4416K,  42% used [0xa0720000, 0xa08f8fd0, 0xa0b70000)
+  from space 512K, 100% used [0xa0bf0000, 0xa0c70000, 0xa0c70000)
+  to   space 512K,   0% used [0xa0b70000, 0xa0b70000, 0xa0bf0000)
+ tenured generation   total 10944K, used 582K [0xa5c70000, 0xa6720000, 0xb0720000)
+   the space 10944K,   5% used [0xa5c70000, 0xa5d01a48, 0xa5d01c00, 0xa6720000)
+ compacting perm gen  total 12288K, used 2503K [0xb0720000, 0xb1320000, 0xb4720000)
+   the space 12288K,  20% used [0xb0720000, 0xb0991e28, 0xb0992000, 0xb1320000)
+No shared spaces configured.
+
+Card table byte_map: [0xa067f000,0xa0720000] byte_map_base: 0xa017b700
+
+Polling page: 0xb77cf000
+
+Code Cache  [0xb47ad000, 0xb486d000, 0xb67ad000)
+ total_blobs=203 nmethods=75 adapters=73 free_code_cache=32015Kb largest_free_block=32784064
+
+Compilation events (10 events):
+Event: 0,624 Thread 0xb6a84000 nmethod 70 0xb4862d48 code [0xb4862e40, 0xb4862ec0]
+Event: 0,637 Thread 0xb6a84000   71             java.lang.String::substring (79 bytes)
+Event: 0,637 Thread 0xb6a84000 nmethod 71 0xb4862f08 code [0xb4863080, 0xb4863340]
+Event: 0,665 Thread 0xb6a84000   72             java.lang.String::endsWith (17 bytes)
+Event: 0,666 Thread 0xb6a84000 nmethod 72 0xb48635c8 code [0xb48636d0, 0xb486378c]
+Event: 0,672 Thread 0xb6a84000   73             java.lang.String::lastIndexOf (13 bytes)
+Event: 0,672 Thread 0xb6a84000 nmethod 73 0xb4863848 code [0xb4863950, 0xb48639fc]
+Event: 0,675 Thread 0xb6a84000   74             java.net.URL::getHost (5 bytes)
+Event: 0,675 Thread 0xb6a84000 nmethod 74 0xb4863a88 code [0xb4863b80, 0xb4863c00]
+Event: 0,677 Thread 0xb6a84000   75   !         java.net.URL::<init> (543 bytes)
+
+GC Heap History (2 events):
+Event: 0,592 GC heap before
+{Heap before GC invocations=0 (full 0):
+ def new generation   total 4928K, used 4416K [0xa0720000, 0xa0c70000, 0xa5c70000)
+  eden space 4416K, 100% used [0xa0720000, 0xa0b70000, 0xa0b70000)
+  from space 512K,   0% used [0xa0b70000, 0xa0b70000, 0xa0bf0000)
+  to   space 512K,   0% used [0xa0bf0000, 0xa0bf0000, 0xa0c70000)
+ tenured generation   total 10944K, used 0K [0xa5c70000, 0xa6720000, 0xb0720000)
+   the space 10944K,   0% used [0xa5c70000, 0xa5c70000, 0xa5c70200, 0xa6720000)
+ compacting perm gen  total 12288K, used 2337K [0xb0720000, 0xb1320000, 0xb4720000)
+   the space 12288K,  19% used [0xb0720000, 0xb0968650, 0xb0968800, 0xb1320000)
+No shared spaces configured.
+Event: 0,600 GC heap after
+Heap after GC invocations=1 (full 0):
+ def new generation   total 4928K, used 512K [0xa0720000, 0xa0c70000, 0xa5c70000)
+  eden space 4416K,   0% used [0xa0720000, 0xa0720000, 0xa0b70000)
+  from space 512K, 100% used [0xa0bf0000, 0xa0c70000, 0xa0c70000)
+  to   space 512K,   0% used [0xa0b70000, 0xa0b70000, 0xa0bf0000)
+ tenured generation   total 10944K, used 582K [0xa5c70000, 0xa6720000, 0xb0720000)
+   the space 10944K,   5% used [0xa5c70000, 0xa5d01a48, 0xa5d01c00, 0xa6720000)
+ compacting perm gen  total 12288K, used 2337K [0xb0720000, 0xb1320000, 0xb4720000)
+   the space 12288K,  19% used [0xb0720000, 0xb0968650, 0xb0968800, 0xb1320000)
+No shared spaces configured.
+}
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 0,673 Thread 0xb6a0d000 Threw 0xa08a00e8 at /HUDSON/workspace/jdk7u40-2-build-linux-i586-product/jdk7u40/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 0,674 Thread 0xb6a0d000 Threw 0xa08a5f20 at /HUDSON/workspace/jdk7u40-2-build-linux-i586-product/jdk7u40/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 0,675 Thread 0xb6a0d000 Threw 0xa08abd48 at /HUDSON/workspace/jdk7u40-2-build-linux-i586-product/jdk7u40/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 0,676 Thread 0xb6a0d000 Threw 0xa08b5280 at /HUDSON/workspace/jdk7u40-2-build-linux-i586-product/jdk7u40/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 0,676 Thread 0xb6a0d000 Threw 0xa08bb340 at /HUDSON/workspace/jdk7u40-2-build-linux-i586-product/jdk7u40/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 0,677 Thread 0xb6a0d000 Threw 0xa08c2e78 at /HUDSON/workspace/jdk7u40-2-build-linux-i586-product/jdk7u40/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 0,678 Thread 0xb6a0d000 Threw 0xa08c9400 at /HUDSON/workspace/jdk7u40-2-build-linux-i586-product/jdk7u40/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 0,678 Thread 0xb6a0d000 Threw 0xa08cf158 at /HUDSON/workspace/jdk7u40-2-build-linux-i586-product/jdk7u40/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 0,679 Thread 0xb6a0d000 Threw 0xa08d4cb8 at /HUDSON/workspace/jdk7u40-2-build-linux-i586-product/jdk7u40/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 0,680 Thread 0xb6a0d000 Threw 0xa08e7448 at /HUDSON/workspace/jdk7u40-2-build-linux-i586-product/jdk7u40/hotspot/src/share/vm/prims/jvm.cpp:1244
+
+Events (10 events):
+Event: 0,677 loading class 0x9fa4e2c0
+Event: 0,677 loading class 0x9fa4e2c0 done
+Event: 0,678 loading class 0x9fa4e310
+Event: 0,678 loading class 0x9fa4e310 done
+Event: 0,678 loading class 0x9fa4e360
+Event: 0,678 loading class 0x9fa4e360 done
+Event: 0,679 loading class 0x9fa71d30
+Event: 0,679 loading class 0x9fa71d30 done
+Event: 0,680 loading class 0x9fa76918
+Event: 0,680 loading class 0x9fa76918 done
+
+
+Dynamic libraries:
+08048000-08049000 r-xp 00000000 08:04 1717000    /usr/local/java/jdk1.7.0_40/bin/java
+08049000-0804a000 rw-p 00000000 08:04 1717000    /usr/local/java/jdk1.7.0_40/bin/java
+09792000-097b3000 rw-p 00000000 00:00 0          [heap]
+9f8b6000-9fa00000 rw-p 00000000 00:00 0 
+9fa00000-9fa98000 rw-p 00000000 00:00 0 
+9fa98000-9fb00000 ---p 00000000 00:00 0 
+9fb09000-9fb0c000 rw-p 00000000 00:00 0 
+9fb0c000-9fb0e000 r--s 00013000 08:04 1976990    /home/guilherme/idea-IU-129.713/lib/idea_rt.jar
+9fb0e000-9fb11000 r--s 0001a000 08:04 5643337    /home/guilherme/.m2/repository/com/jcraft/jsch/0.1.23/jsch-0.1.23.jar
+9fb11000-9fb13000 r--s 00007000 08:04 5643375    /home/guilherme/.m2/repository/org/apache/maven/wagon/wagon-ssh/1.0-alpha-5/wagon-ssh-1.0-alpha-5.jar
+9fb13000-9fb14000 r--s 00001000 08:04 5645070    /home/guilherme/.m2/repository/org/apache/maven/maven-monitor/2.0/maven-monitor-2.0.jar
+9fb14000-9fb16000 r--s 00002000 08:04 5380014    /home/guilherme/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.jar
+9fb16000-9fb18000 r--s 00007000 08:04 5645055    /home/guilherme/.m2/repository/org/apache/maven/maven-plugin-descriptor/2.0/maven-plugin-descriptor-2.0.jar
+9fb18000-9fb1a000 r--s 00006000 08:04 5380013    /home/guilherme/.m2/repository/commons-cli/commons-cli/1.0/commons-cli-1.0.jar
+9fb1a000-9fb1c000 r--s 00005000 08:04 5645038    /home/guilherme/.m2/repository/org/apache/maven/maven-plugin-registry/2.0/maven-plugin-registry-2.0.jar
+9fb1c000-9fb1d000 r--s 00002000 08:04 5645035    /home/guilherme/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0/maven-error-diagnostics-2.0.jar
+9fb1d000-9fb1f000 r--s 00000000 08:04 5643353    /home/guilherme/.m2/repository/doxia/doxia-sink-api/1.0-alpha-4/doxia-sink-api-1.0-alpha-4.jar
+9fb1f000-9fb20000 r--s 00001000 08:04 5643339    /home/guilherme/.m2/repository/org/apache/maven/reporting/maven-reporting-api/2.0/maven-reporting-api-2.0.jar
+9fb20000-9fb21000 r--s 00001000 08:04 5643369    /home/guilherme/.m2/repository/org/apache/maven/wagon/wagon-http-lightweight/1.0-alpha-5/wagon-http-lightweight-1.0-alpha-5.jar
+9fb21000-9fb23000 r--s 00003000 08:04 5645032    /home/guilherme/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.0/maven-plugin-parameter-documenter-2.0.jar
+9fb23000-9fb24000 r--s 00001000 08:04 5643349    /home/guilherme/.m2/repository/org/apache/maven/wagon/wagon-file/1.0-alpha-5/wagon-file-1.0-alpha-5.jar
+9fb24000-9fb28000 r--s 0001e000 08:04 5643386    /home/guilherme/.m2/repository/org/apache/maven/maven-core/2.0/maven-core-2.0.jar
+9fb28000-9fb29000 r--s 00007000 08:04 5643376    /home/guilherme/.m2/repository/org/apache/maven/shared/maven-plugin-testing-harness/1.1/maven-plugin-testing-harness-1.1.jar
+9fb29000-9fb2b000 r--s 00005000 08:04 5769033    /home/guilherme/.m2/repository/org/apache/maven/shared/maven-common-artifact-filters/1.0/maven-common-artifact-filters-1.0.jar
+9fb2b000-9fb2c000 r--s 00005000 08:04 5643351    /home/guilherme/.m2/repository/org/apache/maven/shared/maven-repository-builder/1.0-alpha-2/maven-repository-builder-1.0-alpha-2.jar
+9fb2c000-9fb2e000 r--s 00008000 08:04 4603583    /home/guilherme/.m2/repository/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar
+9fb2e000-9fb2f000 r--s 00002000 08:04 4602128    /home/guilherme/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
+9fb2f000-9fb31000 r--s 00006000 08:04 5515098    /home/guilherme/.m2/repository/org/apache/maven/maven-profile/2.0.4/maven-profile-2.0.4.jar
+9fb31000-9fb33000 r--s 00012000 08:04 5381163    /home/guilherme/.m2/repository/org/apache/maven/maven-model/2.0.4/maven-model-2.0.4.jar
+9fb33000-9fb35000 r--s 00009000 08:04 5252442    /home/guilherme/.m2/repository/org/apache/maven/maven-settings/2.0.4/maven-settings-2.0.4.jar
+9fb35000-9fb38000 r--s 00018000 08:04 5252407    /home/guilherme/.m2/repository/org/apache/maven/maven-project/2.0.4/maven-project-2.0.4.jar
+9fb38000-9fb3a000 r--s 00004000 08:04 4729740    /home/guilherme/.m2/repository/org/codehaus/plexus/plexus-active-collections/1.0-beta-2/plexus-active-collections-1.0-beta-2.jar
+9fb3a000-9fb3c000 r--s 00009000 08:04 5381154    /home/guilherme/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.jar
+9fb3c000-9fb3d000 r--s 00004000 08:04 4729737    /home/guilherme/.m2/repository/org/apache/maven/maven-repository-metadata/2.0.2/maven-repository-metadata-2.0.2.jar
+9fb3d000-9fb40000 r--s 0000a000 08:04 5381157    /home/guilherme/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.2/maven-artifact-manager-2.0.2.jar
+9fb40000-9fb43000 r--s 00011000 08:04 5643355    /home/guilherme/.m2/repository/org/apache/maven/maven-artifact/2.0.4/maven-artifact-2.0.4.jar
+9fb43000-9fb45000 r--s 00008000 08:04 5250126    /home/guilherme/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
+9fb45000-9fb47000 r--s 00001000 08:04 4339221    /home/guilherme/.m2/repository/org/apache/maven/maven-plugin-api/2.0.4/maven-plugin-api-2.0.4.jar
+9fb47000-9fb49000 r--s 00006000 08:04 4993795    /home/guilherme/.m2/repository/org/apache/maven/shared/file-management/1.1/file-management-1.1.jar
+9fb49000-9fb4b000 r--s 00006000 08:04 5381160    /home/guilherme/.m2/repository/org/codehaus/plexus/plexus-io/1.0-alpha-2/plexus-io-1.0-alpha-2.jar
+9fb4b000-9fb4e000 r--s 0001b000 08:04 4982890    /home/guilherme/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
+9fb4e000-9fb55000 r--s 00029000 08:04 4603586    /home/guilherme/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar
+9fb55000-9fb59000 r--s 00030000 08:04 5769029    /home/guilherme/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.jar
+9fb59000-9fb5d000 r--s 00027000 08:04 4472124    /home/guilherme/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-10/plexus-archiver-1.0-alpha-10.jar
+9fb5d000-9fb62000 r--s 00018000 08:04 4339220    /home/guilherme/.m2/repository/aspectj/aspectjrt/1.5.3/aspectjrt-1.5.3.jar
+9fb62000-9fb66000 r--s 0002b000 08:04 4338688    /home/guilherme/.m2/repository/org/apache/maven/plugins/maven-assembly-plugin/2.2-beta-2/maven-assembly-plugin-2.2-beta-2.jar
+9fb66000-9fb68000 r--s 0000a000 08:04 5642959    /home/guilherme/.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar
+9fb68000-9fb6a000 r--s 0000a000 08:04 4723826    /home/guilherme/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar
+9fb6a000-9fb6c000 r--s 0000d000 08:04 5778757    /home/guilherme/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+9fb6c000-9fb71000 r--s 00025000 08:04 4208682    /home/guilherme/.m2/repository/org/apache/httpcomponents/httpcore/4.0-beta1/httpcore-4.0-beta1.jar
+9fb71000-9fb78000 r--s 00036000 08:04 4208679    /home/guilherme/.m2/repository/org/apache/httpcomponents/httpclient/4.0-alpha4/httpclient-4.0-alpha4.jar
+9fb78000-9fb7b000 r--s 0000b000 08:04 4196718    /home/guilherme/.m2/repository/javax/persistence/persistence-api/1.0.2/persistence-api-1.0.2.jar
+9fb7b000-9fb7d000 r--s 0000c000 08:04 4196713    /home/guilherme/.m2/repository/de/undercouch/bson4jackson/1.3.0/bson4jackson-1.3.0.jar
+9fb7d000-9fb82000 r--s 00043000 08:04 4196674    /home/guilherme/.m2/repository/org/mongodb/mongo-java-driver/2.7.2/mongo-java-driver-2.7.2.jar
+9fb82000-9fb85000 r--s 00014000 08:04 4196701    /home/guilherme/.m2/repository/net/vz/mongodb/jackson/mongo-jackson-mapper/1.4.1/mongo-jackson-mapper-1.4.1.jar
+9fb85000-9fb86000 r--s 00006000 08:04 4196782    /home/guilherme/.m2/repository/org/codehaus/jackson/jackson-xc/1.9.2/jackson-xc-1.9.2.jar
+9fb86000-9fb87000 r--s 00004000 08:04 4196773    /home/guilherme/.m2/repository/org/codehaus/jackson/jackson-jaxrs/1.9.2/jackson-jaxrs-1.9.2.jar
+9fb87000-9fb95000 r--s 000ad000 08:04 4196762    /home/guilherme/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.2/jackson-mapper-asl-1.9.2.jar
+9fb95000-9fb99000 r--s 00034000 08:04 4196724    /home/guilherme/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.2/jackson-core-asl-1.9.2.jar
+9fb99000-9fb9b000 r--s 00004000 08:04 4196725    /home/guilherme/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar
+9fb9b000-9fb9e000 r--s 00017000 08:04 4196709    /home/guilherme/.m2/repository/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar
+9fb9e000-9fbb1000 r--s 000c7000 08:04 4196686    /home/guilherme/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar
+9fbb1000-9fbb3000 r--s 0000f000 08:04 4196720    /home/guilherme/.m2/repository/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar
+9fbb3000-9fbb7000 r--s 00020000 08:04 4196675    /home/guilherme/.m2/repository/org/glassfish/jersey/media/jersey-media-json/2.0-m02/jersey-media-json-2.0-m02.jar
+9fbb7000-9fbc0000 r--s 00042000 08:04 4196752    /home/guilherme/.m2/repository/org/glassfish/jersey/core/jersey-server/2.0-m02/jersey-server-2.0-m02.jar
+9fbc0000-9fbc2000 r--s 00003000 08:04 4196733    /home/guilherme/.m2/repository/org/jvnet/tiger-types/1.4/tiger-types-1.4.jar
+9fbc2000-9fbc7000 r--s 00047000 08:04 4196757    /home/guilherme/.m2/repository/org/glassfish/hk2/external/asm-all-repackaged/1.6.32/asm-all-repackaged-1.6.32.jar
+9fbc7000-9fbce000 r--s 0004a000 08:04 4196753    /home/guilherme/.m2/repository/org/glassfish/hk2/auto-depends/1.6.32/auto-depends-1.6.32.jar
+9fbce000-9fbd0000 r--s 00006000 08:04 4196679    /home/guilherme/.m2/repository/org/glassfish/hk2/hk2-api/1.6.32/hk2-api-1.6.32.jar
+9fbd0000-9fbd3000 r--s 00006000 08:04 4196737    /home/guilherme/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar
+9fbd3000-9fbf3000 r--s 00173000 08:04 4196682    /home/guilherme/.m2/repository/com/google/guava/guava/11.0.1/guava-11.0.1.jar
+9fbf3000-9fbf5000 r--s 0000e000 08:04 4196702    /home/guilherme/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar
+9fbf5000-9fc00000 r--s 0006c000 08:04 4196687    /home/guilherme/.m2/repository/org/glassfish/jersey/core/jersey-common/2.0-m02/jersey-common-2.0-m02.jar
+9fc00000-9fcff000 rw-p 00000000 00:00 0 
+9fcff000-9fd00000 ---p 00000000 00:00 0 
+9fd00000-9fd01000 r--s 00001000 08:04 4196691    /home/guilherme/.m2/repository/org/glassfish/hk2/external/javax.inject/1.6.32/javax.inject-1.6.32.jar
+9fd01000-9fd07000 r--s 00059000 08:04 4196731    /home/guilherme/.m2/repository/javax/mail/mail/1.4/mail-1.4.jar
+9fd07000-9fd0a000 r--s 00012000 08:04 4196681    /home/guilherme/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.0-m03/javax.ws.rs-api-2.0-m03.jar
+9fd0a000-9fd18000 r--s 000a6000 08:04 4196758    /home/guilherme/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.2.4/grizzly-framework-2.2.4.jar
+9fd18000-9fda7000 r--s 00dda000 08:04 1717647    /usr/local/java/jdk1.7.0_40/jre/lib/jfxrt.jar
+9fda7000-9fdba000 r--s 001a5000 08:04 1717649    /usr/local/java/jdk1.7.0_40/jre/lib/plugin.jar
+9fdba000-9fdbb000 ---p 00000000 00:00 0 
+9fdbb000-9fe3b000 rw-p 00000000 00:00 0          [stack:13491]
+9fe3b000-9fe3e000 ---p 00000000 00:00 0 
+9fe3e000-9fe8c000 rw-p 00000000 00:00 0          [stack:13490]
+9fe8c000-9fe8f000 ---p 00000000 00:00 0 
+9fe8f000-9ff0d000 rw-p 00000000 00:00 0          [stack:13489]
+9ff0d000-9ff10000 ---p 00000000 00:00 0 
+9ff10000-9ff5e000 rw-p 00000000 00:00 0          [stack:13488]
+9ff5e000-9ff61000 ---p 00000000 00:00 0 
+9ff61000-9ffaf000 rw-p 00000000 00:00 0          [stack:13487]
+9ffaf000-9ffb2000 ---p 00000000 00:00 0 
+9ffb2000-a0000000 rw-p 00000000 00:00 0          [stack:13484]
+a0000000-a0098000 rw-p 00000000 00:00 0 
+a0098000-a0100000 ---p 00000000 00:00 0 
+a0100000-a0105000 r--s 0003b000 08:04 4196742    /home/guilherme/.m2/repository/org/glassfish/grizzly/grizzly-http/2.2.4/grizzly-http-2.2.4.jar
+a0105000-a0109000 r--s 00030000 08:04 4196693    /home/guilherme/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.2.4/grizzly-http-server-2.2.4.jar
+a0109000-a010d000 r--s 0008a000 08:04 1717584    /usr/local/java/jdk1.7.0_40/jre/lib/jsse.jar
+a010d000-a0110000 ---p 00000000 00:00 0 
+a0110000-a015e000 rw-p 00000000 00:00 0          [stack:13483]
+a015e000-a0161000 ---p 00000000 00:00 0 
+a0161000-a01af000 rw-p 00000000 00:00 0          [stack:13482]
+a01af000-a01b2000 ---p 00000000 00:00 0 
+a01b2000-a0200000 rw-p 00000000 00:00 0          [stack:13481]
+a0200000-a0221000 rw-p 00000000 00:00 0 
+a0221000-a0300000 ---p 00000000 00:00 0 
+a0300000-a0301000 r--s 00004000 08:04 4196756    /home/guilherme/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.jar
+a0301000-a0303000 r--s 00002000 08:04 4196697    /home/guilherme/.m2/repository/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.0-m02/jersey-container-grizzly2-http-2.0-m02.jar
+a0303000-a030c000 r--s 000d3000 08:04 1717586    /usr/local/java/jdk1.7.0_40/jre/lib/javaws.jar
+a030c000-a0324000 r--s 00406000 08:04 1717648    /usr/local/java/jdk1.7.0_40/jre/lib/deploy.jar
+a0324000-a0325000 ---p 00000000 00:00 0 
+a0325000-a03f0000 rw-p 00000000 00:00 0          [stack:13480]
+a03f0000-a05ad000 r--s 039d3000 08:04 1717013    /usr/local/java/jdk1.7.0_40/jre/lib/rt.jar
+a05ad000-a060f000 rw-p 00000000 00:00 0 
+a060f000-a0629000 rw-p 00000000 00:00 0 
+a0629000-a062f000 rw-p 00000000 00:00 0 
+a062f000-a067f000 rw-p 00000000 00:00 0 
+a067f000-a0682000 rw-p 00000000 00:00 0 
+a0682000-a06a9000 rw-p 00000000 00:00 0 
+a06a9000-a06af000 rw-p 00000000 00:00 0 
+a06af000-a06ff000 rw-p 00000000 00:00 0 
+a06ff000-a0705000 rw-p 00000000 00:00 0 
+a0705000-a071f000 rw-p 00000000 00:00 0 
+a071f000-a0c70000 rw-p 00000000 00:00 0 
+a0c70000-a5c70000 rw-p 00000000 00:00 0 
+a5c70000-a6720000 rw-p 00000000 00:00 0 
+a6720000-b0720000 rw-p 00000000 00:00 0 
+b0720000-b1320000 rw-p 00000000 00:00 0 
+b1320000-b4720000 rw-p 00000000 00:00 0 
+b4720000-b4721000 r--s 00001000 08:04 4196767    /home/guilherme/.m2/repository/org/glassfish/grizzly/grizzly-rcm/2.2.4/grizzly-rcm-2.2.4.jar
+b4721000-b4723000 r--s 00009000 08:04 4196698    /home/guilherme/.m2/repository/org/glassfish/external/management-api/3.0.0-b012/management-api-3.0.0-b012.jar
+b4723000-b472d000 r--s 00371000 08:04 1717754    /usr/local/java/jdk1.7.0_40/jre/lib/charsets.jar
+b472d000-b4730000 rw-p 00000000 00:00 0 
+b4730000-b47ad000 rw-p 00000000 00:00 0 
+b47ad000-b486d000 rwxp 00000000 00:00 0 
+b486d000-b67ad000 rw-p 00000000 00:00 0 
+b67ad000-b67c4000 r-xp 00000000 08:04 1717575    /usr/local/java/jdk1.7.0_40/jre/lib/i386/libzip.so
+b67c4000-b67c5000 rw-p 00017000 08:04 1717575    /usr/local/java/jdk1.7.0_40/jre/lib/i386/libzip.so
+b67c5000-b67d0000 r-xp 00000000 08:04 2492817    /lib/i386-linux-gnu/libnss_files-2.17.so
+b67d0000-b67d1000 r--p 0000a000 08:04 2492817    /lib/i386-linux-gnu/libnss_files-2.17.so
+b67d1000-b67d2000 rw-p 0000b000 08:04 2492817    /lib/i386-linux-gnu/libnss_files-2.17.so
+b67d2000-b67dc000 r-xp 00000000 08:04 2492828    /lib/i386-linux-gnu/libnss_nis-2.17.so
+b67dc000-b67dd000 r--p 00009000 08:04 2492828    /lib/i386-linux-gnu/libnss_nis-2.17.so
+b67dd000-b67de000 rw-p 0000a000 08:04 2492828    /lib/i386-linux-gnu/libnss_nis-2.17.so
+b67de000-b67f3000 r-xp 00000000 08:04 2492814    /lib/i386-linux-gnu/libnsl-2.17.so
+b67f3000-b67f4000 r--p 00014000 08:04 2492814    /lib/i386-linux-gnu/libnsl-2.17.so
+b67f4000-b67f5000 rw-p 00015000 08:04 2492814    /lib/i386-linux-gnu/libnsl-2.17.so
+b67f5000-b67f7000 rw-p 00000000 00:00 0 
+b67f7000-b67fe000 r-xp 00000000 08:04 2492818    /lib/i386-linux-gnu/libnss_compat-2.17.so
+b67fe000-b67ff000 r--p 00006000 08:04 2492818    /lib/i386-linux-gnu/libnss_compat-2.17.so
+b67ff000-b6800000 rw-p 00007000 08:04 2492818    /lib/i386-linux-gnu/libnss_compat-2.17.so
+b6800000-b6a00000 r--p 00000000 08:04 1449933    /usr/lib/locale/locale-archive
+b6a00000-b6b00000 rw-p 00000000 00:00 0 
+b6b00000-b6b02000 r--s 00004000 08:04 4196729    /home/guilherme/.m2/repository/org/glassfish/gmbal/gmbal-api-only/3.0.0-b023/gmbal-api-only-3.0.0-b023.jar
+b6b02000-b6b08000 r--s 0007d000 08:04 1717785    /usr/local/java/jdk1.7.0_40/jre/lib/jfr.jar
+b6b08000-b6b11000 r--s 00250000 08:04 1717499    /usr/local/java/jdk1.7.0_40/jre/lib/resources.jar
+b6b11000-b6b19000 rw-s 00000000 08:04 5779888    /tmp/hsperfdata_guilherme/13478
+b6b19000-b6b50000 r-xp 00000000 08:04 1717550    /usr/local/java/jdk1.7.0_40/jre/lib/i386/libjdwp.so
+b6b50000-b6b51000 rw-p 00037000 08:04 1717550    /usr/local/java/jdk1.7.0_40/jre/lib/i386/libjdwp.so
+b6b51000-b6b74000 r-xp 00000000 08:04 1717538    /usr/local/java/jdk1.7.0_40/jre/lib/i386/libjava.so
+b6b74000-b6b75000 rw-p 00022000 08:04 1717538    /usr/local/java/jdk1.7.0_40/jre/lib/i386/libjava.so
+b6b75000-b6b7c000 r-xp 00000000 08:04 2492827    /lib/i386-linux-gnu/librt-2.17.so
+b6b7c000-b6b7d000 r--p 00006000 08:04 2492827    /lib/i386-linux-gnu/librt-2.17.so
+b6b7d000-b6b7e000 rw-p 00007000 08:04 2492827    /lib/i386-linux-gnu/librt-2.17.so
+b6b7e000-b6b81000 ---p 00000000 00:00 0 
+b6b81000-b6bcf000 rw-p 00000000 00:00 0          [stack:13479]
+b6bcf000-b6c10000 r-xp 00000000 08:04 2492824    /lib/i386-linux-gnu/libm-2.17.so
+b6c10000-b6c11000 r--p 00040000 08:04 2492824    /lib/i386-linux-gnu/libm-2.17.so
+b6c11000-b6c12000 rw-p 00041000 08:04 2492824    /lib/i386-linux-gnu/libm-2.17.so
+b6c12000-b7198000 r-xp 00000000 08:04 1717533    /usr/local/java/jdk1.7.0_40/jre/lib/i386/client/libjvm.so
+b7198000-b71b9000 rw-p 00586000 08:04 1717533    /usr/local/java/jdk1.7.0_40/jre/lib/i386/client/libjvm.so
+b71b9000-b75da000 rw-p 00000000 00:00 0 
+b75da000-b7788000 r-xp 00000000 08:04 2492825    /lib/i386-linux-gnu/libc-2.17.so
+b7788000-b778a000 r--p 001ae000 08:04 2492825    /lib/i386-linux-gnu/libc-2.17.so
+b778a000-b778b000 rw-p 001b0000 08:04 2492825    /lib/i386-linux-gnu/libc-2.17.so
+b778b000-b778e000 rw-p 00000000 00:00 0 
+b778e000-b7791000 r-xp 00000000 08:04 2492830    /lib/i386-linux-gnu/libdl-2.17.so
+b7791000-b7792000 r--p 00002000 08:04 2492830    /lib/i386-linux-gnu/libdl-2.17.so
+b7792000-b7793000 rw-p 00003000 08:04 2492830    /lib/i386-linux-gnu/libdl-2.17.so
+b7793000-b77a6000 r-xp 00000000 08:04 1717542    /usr/local/java/jdk1.7.0_40/jre/lib/i386/jli/libjli.so
+b77a6000-b77a7000 rw-p 00012000 08:04 1717542    /usr/local/java/jdk1.7.0_40/jre/lib/i386/jli/libjli.so
+b77a7000-b77a8000 rw-p 00000000 00:00 0 
+b77a8000-b77bf000 r-xp 00000000 08:04 2492823    /lib/i386-linux-gnu/libpthread-2.17.so
+b77bf000-b77c0000 r--p 00016000 08:04 2492823    /lib/i386-linux-gnu/libpthread-2.17.so
+b77c0000-b77c1000 rw-p 00017000 08:04 2492823    /lib/i386-linux-gnu/libpthread-2.17.so
+b77c1000-b77c3000 rw-p 00000000 00:00 0 
+b77c3000-b77c4000 r--s 00000000 08:04 1717585    /usr/local/java/jdk1.7.0_40/jre/lib/management-agent.jar
+b77c4000-b77c6000 r--s 00019000 08:04 1717801    /usr/local/java/jdk1.7.0_40/jre/lib/jce.jar
+b77c6000-b77c9000 r-xp 00000000 08:04 1717557    /usr/local/java/jdk1.7.0_40/jre/lib/i386/libdt_socket.so
+b77c9000-b77ca000 rw-p 00003000 08:04 1717557    /usr/local/java/jdk1.7.0_40/jre/lib/i386/libdt_socket.so
+b77ca000-b77cb000 r--p 005e0000 08:04 1449933    /usr/lib/locale/locale-archive
+b77cb000-b77cd000 r-xp 00000000 08:04 1717569    /usr/local/java/jdk1.7.0_40/jre/lib/i386/libnpt.so
+b77cd000-b77ce000 rw-p 00002000 08:04 1717569    /usr/local/java/jdk1.7.0_40/jre/lib/i386/libnpt.so
+b77ce000-b77cf000 rw-p 00000000 00:00 0 
+b77cf000-b77d0000 r--p 00000000 00:00 0 
+b77d0000-b77db000 r-xp 00000000 08:04 1717520    /usr/local/java/jdk1.7.0_40/jre/lib/i386/libverify.so
+b77db000-b77dc000 rw-p 0000b000 08:04 1717520    /usr/local/java/jdk1.7.0_40/jre/lib/i386/libverify.so
+b77dc000-b77de000 rw-p 00000000 00:00 0 
+b77de000-b77df000 r-xp 00000000 00:00 0          [vdso]
+b77df000-b77ff000 r-xp 00000000 08:04 2492826    /lib/i386-linux-gnu/ld-2.17.so
+b77ff000-b7800000 r--p 0001f000 08:04 2492826    /lib/i386-linux-gnu/ld-2.17.so
+b7800000-b7801000 rw-p 00020000 08:04 2492826    /lib/i386-linux-gnu/ld-2.17.so
+bfbd9000-bfbfd000 rw-p 00000000 00:00 0          [stack]
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:53068,suspend=y,server=n -Dfile.encoding=UTF-8 
+java_command: br.org.base.server.Server
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=/usr/local/java/jdk1.7.0_40
+JRE_HOME=/usr/local/java/jre1.7.0_40
+CLASSPATH=./../lib/bootstrap.jar:./../lib/extensions.jar:./../lib/util.jar:./../lib/jdom.jar:./../lib/log4j.jar:./../lib/trove4j.jar:./../lib/jna.jar:/usr/local/java/jdk1.7.0_40/lib/tools.jar
+PATH=/opt/SenchaSDKTools-2.0.0-beta3:/home/guilherme/bin/Sencha/Cmd/4.0.0.203:/usr/local/heroku/bin:/opt/SenchaSDKTools-2.0.0-beta3:/home/guilherme/bin/Sencha/Cmd/4.0.0.203:/home/guilherme/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/guilherme/bin:/usr/local/java/jdk1.7.0_40/bin:/home/guilherme/bin:/usr/local/java/jre1.7.0_40/bin
+LD_LIBRARY_PATH=.:
+SHELL=/bin/bash
+DISPLAY=:0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x503d90], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x503d90], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x3fbe80], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: [libjvm.so+0x3fbe80], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGXFSZ: [libjvm.so+0x3fbe80], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x3fbe80], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x3fd370], sa_mask[0]=0x00000004, sa_flags=0x10000004
+SIGHUP: [libjvm.so+0x3fe4c0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGINT: [libjvm.so+0x3fe4c0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGTERM: [libjvm.so+0x3fe4c0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGQUIT: [libjvm.so+0x3fe4c0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+
+
+---------------  S Y S T E M  ---------------
+
+OS:wheezy/sid
+
+uname:Linux 3.8.0-32-generic #47-Ubuntu SMP Tue Oct 1 21:36:40 UTC 2013 i686
+libc:glibc 2.17 NPTL 2.17 
+rlimit: STACK 8192k, CORE 0k, NPROC 24106, NOFILE 4096, AS infinity
+load average:0,71 0,86 0,91
+
+/proc/meminfo:
+MemTotal:        3102112 kB
+MemFree:          221404 kB
+Buffers:            8252 kB
+Cached:           193156 kB
+SwapCached:       115532 kB
+Active:          1863500 kB
+Inactive:         919640 kB
+Active(anon):    1763008 kB
+Inactive(anon):   836008 kB
+Active(file):     100492 kB
+Inactive(file):    83632 kB
+Unevictable:          48 kB
+Mlocked:              48 kB
+HighTotal:       2231176 kB
+HighFree:          77544 kB
+LowTotal:         870936 kB
+LowFree:          143860 kB
+SwapTotal:       1999868 kB
+SwapFree:        1396344 kB
+Dirty:              8932 kB
+Writeback:             0 kB
+AnonPages:       2533012 kB
+Mapped:            96568 kB
+Shmem:             17188 kB
+Slab:              38688 kB
+SReclaimable:      16360 kB
+SUnreclaim:        22328 kB
+KernelStack:        5784 kB
+PageTables:        22592 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     3550924 kB
+Committed_AS:    7241552 kB
+VmallocTotal:     122880 kB
+VmallocUsed:       46444 kB
+VmallocChunk:      70132 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       59384 kB
+DirectMap2M:      854016 kB
+
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 15 model 6 stepping 5, cmov, cx8, fxsr, mmx, sse, sse2, sse3, tsc
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 15
+model		: 6
+model name	: Intel(R) Pentium(R) D CPU 3.20GHz
+stepping	: 5
+microcode	: 0xb
+cpu MHz		: 3200.000
+cache size	: 2048 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 6
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx lm constant_tsc pebs bts pni dtes64 monitor ds_cpl est cid cx16 xtpr pdcm lahf_lm
+bogomips	: 6399.22
+clflush size	: 64
+cache_alignment	: 128
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 15
+model		: 6
+model name	: Intel(R) Pentium(R) D CPU 3.20GHz
+stepping	: 5
+microcode	: 0xb
+cpu MHz		: 3200.000
+cache size	: 2048 KB
+physical id	: 0
+siblings	: 2
+core id		: 1
+cpu cores	: 2
+apicid		: 1
+initial apicid	: 1
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 6
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx lm constant_tsc pebs bts pni dtes64 monitor ds_cpl est cid cx16 xtpr pdcm lahf_lm
+bogomips	: 6399.22
+clflush size	: 64
+cache_alignment	: 128
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 3102112k(221404k free), swap 1999868k(1396344k free)
+
+vm_info: Java HotSpot(TM) Client VM (24.0-b56) for linux-x86 JRE (1.7.0_40-b43), built on Aug 26 2013 22:05:59 by "java_re" with gcc 4.3.0 20080428 (Red Hat 4.3.0-8)
+
+time: Thu Oct 31 04:52:27 2013
+elapsed time: 0 seconds
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TCC</title>
+
+    <link rel="stylesheet" type="text/css" href="js/ext-4.0.1/resources/css/ext-all.css" />
+    <script type="text/javascript" src="js/ext-4.0.1/ext-all-dev.js"></script>
+
+
+    <script type="text/javascript">
+
+
+        Ext.Loader.setPath({
+            enabled: true,
+
+            'MyApp': 'js/MyApp'
+        });
+
+
+        Ext.onReady(function(){
+
+
+            var cliente = Ext.create('MyApp.models.Cliente')
+
+            cliente.set('nome','ksahdlasj')
+
+
+            Ext.create('MyApp.views.cliente.ClienteGridPanel')
+
+
+            cliente.save();
+
+
+        });
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

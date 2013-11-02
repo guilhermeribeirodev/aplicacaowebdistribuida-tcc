@@ -1,11 +1,9 @@
-Ext.define('MyApp.views.cliente.ClienteGridPanel', {
+Ext.define('MyApp.views.produto.ProdutoGridPanel', {
     extend: 'Ext.grid.Panel',
-    alias: 'widget.ClienteGridPanel',
+    alias: 'widget.ProdutoGridPanel',
     requires: [
-        'MyApp.stores.ClienteStore',
-        'MyApp.models.Cliente',
-        'Ext.ux.RowExpander',
-        'MyApp.views.cliente.ClienteFormPanel'
+        'MyApp.stores.ProdutoStore',
+        'MyApp.models.Produto'
 
     ],
 
@@ -14,14 +12,14 @@ Ext.define('MyApp.views.cliente.ClienteGridPanel', {
     cls: 'grid-row',
     columnLines: true,
     selType: 'rowmodel',
-    height: 200,
+
     renderTo: document.body,
 
-    emptyText: 'Nenhum cliente encontrado! ',
+    emptyText: 'Nenhum produto encontrado! ',
 
 
     initComponent: function () {
-        this.store = MyApp.stores.ClienteStore;
+        this.store = MyApp.stores.ProdutoStore;
         this.columns = this.buildColumns();
         this.callParent();
 
@@ -31,12 +29,9 @@ Ext.define('MyApp.views.cliente.ClienteGridPanel', {
 
             { header: 'Nome', dataIndex: 'nome', flex: 1 },
 
-            { header: 'Idade', dataIndex: 'idade', flex: 1 },
+            { header: 'Valor', dataIndex: 'valor', flex: 1 },
 
-            { header: 'Documento', dataIndex: 'documento', flex: 1 },
-
-
-            { header: 'criacao', dataIndex: 'criacao', width: 200, renderer: Ext.util.Format.dateRenderer('m-d-Y g:i A')},
+            { header: 'Serie', dataIndex: 'serie', flex: 1 },
 
 
 
@@ -54,18 +49,18 @@ Ext.define('MyApp.views.cliente.ClienteGridPanel', {
 
                             Ext.MessageBox.confirm({
 
-                                title:'Remover cliente',
-                                msg: 'Deseja realmente remover este cliente ?',
+                                title:'Remover produto',
+                                msg: 'Deseja realmente remover este produto ?',
                                 buttonText: {yes: "Remover",cancel: "Cancelar"},
                                 fn: function(btn){
                                     console.log('you clicked: ',btn); //you clicked:  yes
                                     if (btn === 'yes') {
 
-                                        var cliente = MyApp.stores.ClienteStore.getAt(rowIndex)
+                                        var produto = MyApp.stores.ProdutoStore.getAt(rowIndex)
 
-                                        MyApp.stores.ClienteStore.remove(cliente)
+                                        MyApp.stores.ProdutoStore.remove(produto)
 
-                                        MyApp.stores.ClienteStore.sync();
+                                        MyApp.stores.ProdutoStore.sync();
                                     }
                                     else {
                                         return;

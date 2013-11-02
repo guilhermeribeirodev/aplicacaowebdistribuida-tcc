@@ -1,13 +1,12 @@
-Ext.define('MyApp.models.Cliente', {
+Ext.define('MyApp.models.Produto', {
     extend    : 'Ext.data.Model',
 
     fields   : [
 
 
         'nome',
-        'documento',
-        'idade',
-        { name:'criacao', type: 'date', dateFormat: 'm-d-Y g:i A'}
+        'valor',
+        'serie'
 
 
 
@@ -15,7 +14,7 @@ Ext.define('MyApp.models.Cliente', {
 
     proxy: {
         type: 'rest',
-        url : '/clientes'
+        url : '/produtos'
 
     },
 

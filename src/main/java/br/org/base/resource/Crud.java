@@ -17,9 +17,9 @@ public interface Crud<T> {
 
     public T read(String id);
 
-    public List readAll();
+    public List<T> readAll();
 
-    public void update();
+    public void update(String id);
 
     public void delete(String id);
 

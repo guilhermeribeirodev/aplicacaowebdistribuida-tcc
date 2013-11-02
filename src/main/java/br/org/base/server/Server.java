@@ -1,5 +1,7 @@
 package br.org.base.server;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.joda.JodaModule;
 import com.mongodb.DB;
 import com.mongodb.Mongo;
 import com.mongodb.MongoURI;
@@ -29,17 +31,20 @@ public class Server {
 
     public static String contentUrl;
 
-    private static final String CONTENT_PATH = "/desktop";
+    private static final String CONTENT_PATH = "";
 
     public static void main(String[] args) throws IOException, URISyntaxException, InterruptedException {
 
-        final int port = System.getenv("PORT") != null ? Integer.valueOf(System.getenv("PORT")) : 8081;
+        final int port = System.getenv("PORT") != null ? Integer.valueOf(System.getenv("PORT")) : 8083;
         final URI baseUri = UriBuilder.fromUri("http://0.0.0.0/").port(port).build();
 
 
         final Application server = Application.builder(ResourceConfig.builder().packages("br.org.base.resource").build()).build();
 
         server.addModules(new JsonJacksonModule());
+
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.registerModule(new JodaModule());
 
         final HttpServer httpServer = GrizzlyHttpServerFactory.createHttpServer(baseUri, server);
         httpServer.getServerConfiguration().addHttpHandler(new StaticHttpHandler("src/main/webapp"), CONTENT_PATH);

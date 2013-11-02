@@ -1,6 +1,6 @@
 package br.org.base.resource;
 
-import br.org.base.model.Cliente;
+import br.org.base.model.Produto;
 import br.org.base.server.Server;
 import net.vz.mongodb.jackson.DBCursor;
 import net.vz.mongodb.jackson.JacksonDBCollection;
@@ -22,33 +22,33 @@ import java.util.logging.Logger;
  */
 
 @Singleton
-@Path("clientes")
-public class ClienteResource implements Crud<Cliente>{
+@Path("produtos")
+public class ProdutoResource implements Crud<Produto>{
 
 
-    static final JacksonDBCollection<Cliente, String> jacksonDB = JacksonDBCollection.wrap(Server.mongoDB.getCollection(Cliente.class.getSimpleName().toLowerCase()), Cliente.class, String.class);
+    static final JacksonDBCollection<Produto, String> jacksonDB = JacksonDBCollection.wrap(Server.mongoDB.getCollection(Produto.class.getSimpleName().toLowerCase()), Produto.class, String.class);
 
-    public ClienteResource() {
+    public ProdutoResource() {
 
     }
 
-    private static final Logger LOGGER = Logger.getLogger(ClienteResource.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(ProdutoResource.class.getName());
 
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Cliente create(Cliente cliente) {
+    public Produto create(Produto produto) {
 
 
-        WriteResult<Cliente, String> res = jacksonDB.insert(cliente);
-        return (Cliente) res.getSavedObject();
+        WriteResult<Produto, String> res = jacksonDB.insert(produto);
+        return (Produto) res.getSavedObject();
     }
 
     @GET
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Cliente read(@PathParam("id") String id){
+    public Produto read(@PathParam("id") String id){
 
 
 
@@ -58,14 +58,14 @@ public class ClienteResource implements Crud<Cliente>{
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Cliente> readAll() {
+    public List<Produto> readAll() {
 
 
-        List<Cliente> lista = new ArrayList<Cliente>();
-        DBCursor<Cliente> cursor = jacksonDB.find();
+        List<Produto> lista = new ArrayList<Produto>();
+        DBCursor<Produto> cursor = jacksonDB.find();
 
         while (cursor.hasNext()) {
-            Cliente t = cursor.next();
+            Produto t = cursor.next();
 
 
 
@@ -87,7 +87,7 @@ public class ClienteResource implements Crud<Cliente>{
     @Path("{id}")
     public void delete(@PathParam("id") String id) {
 
-        WriteResult<Cliente, String> res = jacksonDB.removeById(id);
+        WriteResult<Produto, String> res = jacksonDB.removeById(id);
 
         System.out.println(res);
     }

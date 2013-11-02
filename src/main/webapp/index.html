@@ -3,8 +3,8 @@
 <head>
     <title>TCC</title>
 
-    <link rel="stylesheet" type="text/css" href="js/ext-4.0.1/resources/css/ext-all.css" />
-    <script type="text/javascript" src="js/ext-4.0.1/ext-all-dev.js"></script>
+    <link rel="stylesheet" type="text/css" href="../js/ext-4.0.1/resources/css/ext-all.css" />
+    <script type="text/javascript" src="/js/ext-4.0.1/ext-all-dev.js"></script>
 
 
     <script type="text/javascript">
@@ -13,22 +13,81 @@
         Ext.Loader.setPath({
             enabled: true,
 
-            'MyApp': 'js/MyApp'
+            'MyApp': '/js/MyApp'
         });
 
 
         Ext.onReady(function(){
 
 
+            Ext.require("MyApp.models.Cliente");
+            Ext.require("MyApp.models.Produto");
+            Ext.require("MyApp.views.cliente.ClienteGridPanel");
+            Ext.require("MyApp.views.produto.ProdutoGridPanel");
+
+
             var cliente = Ext.create('MyApp.models.Cliente')
 
             cliente.set('nome','ksahdlasj')
 
-
-            Ext.create('MyApp.views.cliente.ClienteGridPanel')
-
+            cliente.set('criacao',new Date())
 
             cliente.save();
+
+
+            var produto = Ext.create('MyApp.models.Produto')
+
+            produto.set('nome','nome prod')
+            produto.set('valor',2.56)
+            produto.set('serie','16253176287')
+
+            produto.save()
+
+
+
+            //Ext.create('MyApp.views.cliente.ClienteGridPanel')
+
+
+            //Ext.create('MyApp.views.cliente.ProdutoGridPanel')
+
+
+
+
+
+            var win2 = Ext.create('widget.window', {
+                height: 200,
+                width: 400,
+                x: 450,
+                y: 450,
+                title: 'Constraining Window, plain: true',
+                closable: false,
+                plain: true,
+                layout: 'fit',
+                items: [
+                    Ext.create('MyApp.views.cliente.ClienteGridPanel')
+                ]
+            });
+            win2.show();
+
+
+            var win3 = Ext.create('widget.window', {
+                height: 200,
+                width: 400,
+                x: 100,
+                y: 100,
+                title: 'dfsdfsdfsdf',
+                closable: false,
+                plain: true,
+                layout: 'fit',
+                items: [
+                    Ext.create('MyApp.views.produto.ProdutoGridPanel')
+                ]
+            });
+            win3.show();
+
+
+
+
 
 
         });

@@ -2,51 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51348a62-ff89-494f-9dd4-ada61165704d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/org/base/resource/IndexResource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_joda_2_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/org/base/model/Produto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/MyApp/models/Produto.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/MyApp/views/produto/ProdutoGridPanel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/org/base/resource/ProdutoResource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/MyApp/stores/ProdutoStore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ProdutoTeste.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid11962.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid12029.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid13046.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid13478.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid13511.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid13555.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid9784.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/org/base/model/Cliente.java" afterPath="$PROJECT_DIR$/src/main/java/br/org/base/model/Cliente.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/MyApp/models/Cliente.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/MyApp/models/Cliente.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/MyApp/views/cliente/ClienteGridPanel.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/MyApp/views/cliente/ClienteGridPanel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java" afterPath="$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ClienteTeste.java" afterPath="$PROJECT_DIR$/src/test/java/ClienteTeste.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/org/base/resource/Crud.java" afterPath="$PROJECT_DIR$/src/main/java/br/org/base/resource/Crud.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java" afterPath="$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aplicacaowebdistribuida-tcc.iml" afterPath="$PROJECT_DIR$/aplicacaowebdistribuida-tcc.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid13311.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid13360.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid13538.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid18819.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid19613.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid20305.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid20759.log" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/org/base/resource/IndexResource.java" afterPath="$PROJECT_DIR$/src/main/java/br/org/base/resource/IndexResource.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aplicacaowebdistribuida-tcc.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383410400059" ignored="false" />
+    <file path="/Dummy.txt" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385129294067" ignored="false" />
     <file path="/pom.xml" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383191995021" ignored="false" />
     <file path="/BarServer.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383192417572" ignored="false" />
     <file path="/Server.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383192595224" ignored="false" />
     <file path="/ClienteResource.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383203465393" ignored="false" />
     <file path="/CrudBasico.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383193098636" ignored="false" />
-    <file path="/fragment.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383239230647" ignored="false" />
+    <file path="/fragment.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1384892152898" ignored="false" />
     <file path="/Cliente.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383241213590" ignored="false" />
     <file path="$PROJECT_DIR$/../app_bares/src/main/java/br/org/base/resource/CrudBasico.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383193628480" ignored="false" />
     <file path="/Crud.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383235725532" ignored="false" />
     <file path="/ClienteTeste.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383289777544" ignored="false" />
-    <file path="/index.html" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383282158649" ignored="false" />
+    <file path="/index.html" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385093691290" ignored="false" />
     <file path="/Cliente.js" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383241610567" ignored="false" />
     <file path="/ClienteGridPanel.js" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383241630431" ignored="false" />
     <file path="/Produto.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383238918946" ignored="false" />
@@ -57,7 +37,22 @@
     <file path="/Processado.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383245360694" ignored="false" />
     <file path="$PROJECT_DIR$/../app_bares/src/main/webapp/js/MyApp/models/Processado.js" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383245288123" ignored="false" />
     <file path="/Processado.js" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383245279758" ignored="false" />
-    <file path="/IndexResource.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383281806566" ignored="false" />
+    <file path="/IndexResource.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385093769232" ignored="false" />
+    <file path="$PROJECT_DIR$/../androidclientb1/res/values/strings.xml" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1384892503447" ignored="false" />
+    <file path="$PROJECT_DIR$/../androidclientb1/AndroidManifest.xml" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1384892144221" ignored="false" />
+    <file path="$PROJECT_DIR$/../androidclientb1/src/com/example/androidclientb1/MyActivity.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1384891965538" ignored="false" />
+    <file path="$PROJECT_DIR$/../androidclientb1/build.xml" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1384891965538" ignored="false" />
+    <file path="$PROJECT_DIR$/../androidclientb1/res/layout/main.xml" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1384891965538" ignored="false" />
+    <file path="$PROJECT_DIR$/../androidclientb1/.idea/workspace.xml" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1384892570719" ignored="false" />
+    <file path="$PROJECT_DIR$/../androidclientb1/src/com/example/androidclientb1/ImageAdapter.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1384892084120" ignored="false" />
+    <file path="$PROJECT_DIR$/../androidclientb1/src/com/example/androidclientb1/UserActivity.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1384892084120" ignored="false" />
+    <file path="$PROJECT_DIR$/../androidclientb1/src/com/example/androidclientb1/HttpUtil.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1384892084120" ignored="false" />
+    <file path="$PROJECT_DIR$/../androidclientb1/src/test/HttpUtilTest.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1384892084120" ignored="false" />
+    <file path="$PROJECT_DIR$/../androidclientb1/src/com/example/androidclientb1/PathToList.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1384892084120" ignored="false" />
+    <file path="$PROJECT_DIR$/../androidclientb1/src/com/example/androidclientb1/ProdutoActivity.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1384892084120" ignored="false" />
+    <file path="$PROJECT_DIR$/../androidclientb1/src/com/example/androidclientb1/LoginActivity.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1384892084120" ignored="false" />
+    <file path="/strings.xml" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1384892503447" ignored="false" />
+    <file path="/ImplFacade.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385100336900" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,23 +103,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/IndexResource.java" line="35" class="br.org.base.resource.IndexResource" package="br.org.base.resource">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -138,28 +117,8 @@
       <file leaf-file-name="Server.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="61" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.0">
+            <state line="32" column="122" selection-start="977" selection-end="977" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="96" selection-start="3974" selection-end="3974" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClienteTeste.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ClienteTeste.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="46" selection-start="3346" selection-end="3346" vertical-scroll-proportion="1.6777408">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -167,43 +126,43 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="43" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
+            <state line="11" column="101" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexResource.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="bootstrap.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/ext-4.0.1/bootstrap.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexResource.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/IndexResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="91" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0">
+            <state line="13" column="35" selection-start="301" selection-end="301" vertical-scroll-proportion="0.1201373">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cliente.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/MyApp/models/Cliente.js">
+      <file leaf-file-name="ProdutoResource.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/ProdutoResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="39" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
+            <state line="20" column="93" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClienteGridPanel.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/MyApp/views/cliente/ClienteGridPanel.js">
+      <file leaf-file-name="ClienteResource.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="4" selection-start="817" selection-end="817" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cliente.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/model/Cliente.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="11" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
+            <state line="61" column="68" selection-start="1510" selection-end="1510" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -236,9 +195,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/br/org/base/resource/Crud.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/org/base/model/Produto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/org/base/resource/ProdutoResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/model/ProdutoTeste.java" />
         <option value="$PROJECT_DIR$/src/test/java/ProdutoTeste.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/MyApp/models/Produto.js" />
@@ -249,17 +205,20 @@
         <option value="$PROJECT_DIR$/src/main/webapp/js/MyApp/models/Cliente.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/MyApp/views/cliente/ClienteGridPanel.js" />
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ClienteTeste.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/resource/IndexResource.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ClienteTeste.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/org/base/facade/AbstractFacade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/org/base/facade/CrudableFacade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/org/base/facade/ImplFacade.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="53" />
-    <option name="y" value="-4" />
-    <option name="width" value="1868" />
-    <option name="height" value="1085" />
+    <option name="x" value="234" />
+    <option name="y" value="26" />
+    <option name="width" value="1287" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -287,8 +246,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -366,96 +325,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aplicacaowebdistribuida-tcc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aplicacaowebdistribuida-tcc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aplicacaowebdistribuida-tcc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aplicacaowebdistribuida-tcc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ext-4.0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aplicacaowebdistribuida-tcc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aplicacaowebdistribuida-tcc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ext-4.0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -578,7 +447,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../smartflex-comanda-pista" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -866,7 +735,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="-4" width="1868" height="1085" extended-state="6" />
+    <frame x="234" y="26" width="1287" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -881,7 +750,6 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.57788163" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46749225" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -890,12 +758,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30231276" sideWeight="0.6718266" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32817337" sideWeight="0.67890626" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2834008" sideWeight="0.6727664" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.67890626" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46749225" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -964,52 +833,16 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="53" selection-start="1414" selection-end="1414" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/ProdutoResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="85" selection-start="1951" selection-end="1951" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1555#1564#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ProdutoTeste.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="60" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/MyApp/models/Produto.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="24" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/MyApp/views/produto/ProdutoGridPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="63" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/MyApp/models/Cliente.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="39" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
+        <state line="20" column="93" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/MyApp/views/cliente/ClienteGridPanel.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="4" selection-start="817" selection-end="817" vertical-scroll-proportion="0.0">
+        <state line="61" column="68" selection-start="1510" selection-end="1510" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1021,39 +854,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/MyApp/views/cliente/ClienteGridPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="61" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="43" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/IndexResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="91" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="35" column="4" selection-start="817" selection-end="817" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/model/Produto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="58" selection-start="929" selection-end="929" vertical-scroll-proportion="0.04491018">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="96" selection-start="3974" selection-end="3974" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="57" column="58" selection-start="929" selection-end="929" vertical-scroll-proportion="0.04491018" />
       </provider>
     </entry>
     <entry file="jar:///usr/local/java/jdk1.7.0_40/src.zip!/java/util/Set.java">
@@ -1070,10 +878,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ClienteTeste.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="46" selection-start="3346" selection-end="3346" vertical-scroll-proportion="1.6777408">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="134" column="53" selection-start="3461" selection-end="3461" vertical-scroll-proportion="0.66917294" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="96" selection-start="3974" selection-end="3974" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="68" selection-start="1510" selection-end="1510" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/MyApp/stores/ProdutoStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="42" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="122" selection-start="977" selection-end="977" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/ProdutoResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="93" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/ext-4.0.1/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="101" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/IndexResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="35" selection-start="301" selection-end="301" vertical-scroll-proportion="0.1201373">
+          <folding />
         </state>
       </provider>
     </entry>

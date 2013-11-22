@@ -1,0 +1,138 @@
+guilherme@base:~$ telnet app-bares.herokuapp.com 80
+Trying 50.17.229.49...
+Connected to argon-stack-1879049447.us-east-1.elb.amazonaws.com.
+Escape character is '^]'.
+
+/////////////////////////////////////////////////////////////////
+curl -v localhost:8083/clientes
+GET
+///////////////////////////////////////////////////////////////
+
+GET /clientes HTTP/1.1
+host: app-bares.herokuapp.com
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Fri, 01 Nov 2013 22:39:45 GMT
+transfer-encoding: chunked
+Connection: keep-alive
+
+3b4
+[{"id":"5250c15c92e6e175130d2679","nome":"Cliente","endereco":"","email":"email@email.com","sobrenome":"Fulano","rg":"19283781","telefoneRes":"798987897","telefoneCel":"7987987987","dispositivos":null,"nascimento":null,"mailing":false,"vip":false,"blacklisted":false,"comanda":null,"ativo":false},{"id":"52693bd6e4b056a697229f78","nome":"Siclano","endereco":"Av. X de Souza","email":"email@johnmayall.com.br","sobrenome":"da SIlva II","rg":"","telefoneRes":"16-645146545","telefoneCel":"16-91569875","dispositivos":null,"nascimento":null,"mailing":false,"vip":false,"blacklisted":false,"comanda":null,"ativo":false},{"id":"52696643e4b0fb6a85c2aa3f","nome":"Zé (Emerson)","endereco":"Rua Maria José 457","email":"emerson@universoinsano.com.br","sobrenome":"Travaglini","rg":"","telefoneRes":"32083881","telefoneCel":"14 981417505","dispositivos":null,"nascimento":null,"mailing":false,"vip":false,"blacklisted":false,"comanda":null,"ativo":false}]
+0
+
+
+////////////////////////////////////////////////
+
+PUT
+////////////////////////////
+
+PUT /clientes/5272971544ae7673a099416a HTTP/1.1
+host: localhost
+Content-Length: 68
+Content-Type: application/json 
+{nome":"aaaaaaaaaa","documento":"","criacao":1383234293000,"idade":1}
+
+
+
+////////////////////////////////////////////////
+curl -X POST -H "Content-Type: application/json" -d '{"nome":"ksahdlasj","documento":"","criacao":1383234293000,"idade":0}' http://localhost:8081/clientes
+
+curl -X POST -H "Content-Type: application/json" -d '{"nome":"ksahdlasj","produtos":[{ "nome":"jkkjhkjhk"}]}' 
+
+curl -X PUT -H "Content-Type: application/json" -d '{"nome":"fulano","produtos":[{ "nome":"jkkjhkjhk"},{"nome":"outro"}]}' http://localhost:8081/cardapios/528b70b3ccf2b9e5e65b63eb
+
+POST
+////////////////////////////
+
+POST /clientes HTTP/1.1
+host: localhost
+Content-Length: 77
+Content-Type: application/json 
+Connection: Close
+{"id":"","nome":"ksahdlasj","documento":"","criacao":1383234293000,"idade":0}
+
+
+
+//////////////////////////////////////////////////////////
+curl -i -H "Accept: application/json" -X DELETE localhost/clientes/5272971544ae7673a099416a
+DELETE
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+////////////////////////////////////////////////////////
+
+RPC
+///////////////////////////////////////////////
+
+POST /xmlrpc HTTP 1.0
+User-Agent: myXMLRPCClient/1.0
+Host: 192.168.124.2
+Content-Type: text/xml
+Content-Length: 169
+<?xml version="1.0"?>
+<methodCall>
+   <methodName>circleArea</methodName>
+      <params>
+         <param>
+            <value><double>2.41</double></value>
+         </param>
+      </params>
+</methodCall>
+
+
+
+/////////////////////////////////////////////////////
+
+SOAP
+////////////////////////////////////////////////////
+
+POST /InStock HTTP/1.1
+Host: www.example.org
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: 299
+SOAPAction: "http://www.w3.org/2003/05/soap-envelope"
+<!- ->
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+  <soap:Header>
+  </soap:Header>
+  <soap:Body>
+    <m:GetStockPrice xmlns:m="http://www.example.org/stock">
+      <m:StockName>IBM</m:StockName>
+    </m:GetStockPrice>
+  </soap:Body>
+</soap:Envelope>
+
+
+
+199
+,{"id":"5272979344ae7673a099416d","nome":"ksahdlasj","documento":"","criacao":1383234419000,"idade":0},{"id":"527297a244ae7673a099416f","nome":"ksahdlasj","documento":"","criacao":1383234434000,"idade":0}]
+
+
+,{"id":"5272976e44ae7673a099416b","nome":"ksahdlasj","documento":"","criacao":1383234382000,"idade":0}
+
+
+{"nome":"ksahdlasj","documento":"","criacao":1383234293000,"idade":0}
+
+
+
+
+////////////////////
+
+HEROKU
+
+
+//////////////////////
+
+293398
+adm 9719a2540732baf2bf4c4cb0642806
+
+notify 2c08c31fce55dd3cbbe14755273dd1
+
+
+curl --data "room_id=293398&from=suporte&message=Mensagem+de+erro+smartflex-suporte&auth_token=2c08c31fce55dd3cbbe14755273dd1" http://api.hipchat.com/v1/rooms/message

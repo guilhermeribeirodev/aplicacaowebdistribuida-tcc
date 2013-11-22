@@ -15,7 +15,7 @@ import java.io.IOException;
  * Time: 2:55 AM
  * To change this template use File | Settings | File Templates.
  */
-@Path("/oo")
+@Path("/")
 public class IndexResource {
 
 
@@ -35,13 +35,13 @@ public class IndexResource {
             BufferedReader in = new BufferedReader(new FileReader("src/main/webapp/index.html"));
             String str;
             while ((str = in.readLine()) != null) {
-                contentBuilder.append(str);
+                contentBuilder.append("\n"+str);
             }
             in.close();
         } catch (IOException e) {
         }
         String content = contentBuilder.toString();
 
-        return content;
+        return content.trim();
     }
 }

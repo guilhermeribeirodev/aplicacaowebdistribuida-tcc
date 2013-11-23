@@ -72,6 +72,9 @@ public class Cliente  {
 
 
     public DateTime getCriacao() {
+
+        criacao = new DateTime();
+
         return criacao;
     }
 

@@ -19,7 +19,7 @@ public interface Crud<T> {
 
     public List<T> readAll();
 
-    public void update(String id);
+    public T update(String id, T t);
 
     public void delete(String id);
 

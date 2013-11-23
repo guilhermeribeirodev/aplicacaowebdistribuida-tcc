@@ -78,7 +78,7 @@ public class ClienteResource implements Crud<Cliente>{
 
     @PUT
     @Path("{id}")
-    public void update(@PathParam("id") String id, Cliente cliente) {
+    public Cliente update(@PathParam("id") String id, Cliente cliente) {
 
         WriteResult<Cliente, String> res = jacksonDB.updateById(id,cliente);
         return (Cliente) res.getSavedObject();

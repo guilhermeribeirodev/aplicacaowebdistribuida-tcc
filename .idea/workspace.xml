@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51348a62-ff89-494f-9dd4-ada61165704d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/org/base/model/Cliente.java" afterPath="$PROJECT_DIR$/src/main/java/br/org/base/model/Cliente.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java" afterPath="$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/org/base/resource/Crud.java" afterPath="$PROJECT_DIR$/src/main/java/br/org/base/resource/Crud.java" />
     </list>
     <ignored path="aplicacaowebdistribuida-tcc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -12,12 +11,12 @@
     <file path="/pom.xml" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383191995021" ignored="false" />
     <file path="/BarServer.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383192417572" ignored="false" />
     <file path="/Server.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383192595224" ignored="false" />
-    <file path="/ClienteResource.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385239052364" ignored="false" />
+    <file path="/ClienteResource.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385239503193" ignored="false" />
     <file path="/CrudBasico.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383193098636" ignored="false" />
     <file path="/fragment.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1384892152898" ignored="false" />
     <file path="/Cliente.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385235054276" ignored="false" />
     <file path="$PROJECT_DIR$/../app_bares/src/main/java/br/org/base/resource/CrudBasico.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383193628480" ignored="false" />
-    <file path="/Crud.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383235725532" ignored="false" />
+    <file path="/Crud.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385241601480" ignored="false" />
     <file path="/ClienteTeste.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383289777544" ignored="false" />
     <file path="/index.html" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385093691290" ignored="false" />
     <file path="/Cliente.js" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383241610567" ignored="false" />
@@ -155,7 +154,25 @@
       <file leaf-file-name="ClienteResource.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="74" selection-start="1862" selection-end="1862" vertical-scroll-proportion="0.599768">
+            <state line="25" column="43" selection-start="638" selection-end="638" vertical-scroll-proportion="-1.7336448">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Crud.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/Crud.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="54" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JacksonDBCollection.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/net/vz/mongodb/jackson/mongo-jackson-mapper/1.4.1/mongo-jackson-mapper-1.4.1-sources.jar!/net/vz/mongodb/jackson/JacksonDBCollection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="49" selection-start="1948" selection-end="1948" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -188,7 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/ProdutoTeste.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/MyApp/models/Produto.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/MyApp/stores/ProdutoStore.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/MyApp/views/produto/ProdutoGridPanel.js" />
@@ -204,6 +220,7 @@
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/facade/ImplFacade.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/model/Cliente.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/org/base/resource/Crud.java" />
       </list>
     </option>
   </component>
@@ -729,7 +746,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="24" width="935" height="1057" extended-state="4" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -743,7 +760,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.57788163" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46666667" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46666667" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -826,20 +843,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/ProdutoResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="93" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="68" selection-start="1510" selection-end="1510" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/MyApp/stores/ProdutoStore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="42" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
@@ -923,9 +926,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/vz/mongodb/jackson/mongo-jackson-mapper/1.4.1/mongo-jackson-mapper-1.4.1-sources.jar!/net/vz/mongodb/jackson/JacksonDBCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="49" selection-start="1948" selection-end="1948" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/Crud.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="54" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="74" selection-start="1862" selection-end="1862" vertical-scroll-proportion="0.599768">
+        <state line="25" column="43" selection-start="638" selection-end="638" vertical-scroll-proportion="-1.7336448">
           <folding />
         </state>
       </provider>

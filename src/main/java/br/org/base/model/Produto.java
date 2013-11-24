@@ -2,6 +2,7 @@ package br.org.base.model;
 
 import net.vz.mongodb.jackson.Id;
 import net.vz.mongodb.jackson.ObjectId;
+import org.joda.time.DateTime;
 
 /**
  * Created with IntelliJ IDEA.
@@ -22,6 +23,7 @@ public class Produto {
     private float valor;
 
     private String serie;
+    private DateTime criacao;
 
 
     public String getId() {

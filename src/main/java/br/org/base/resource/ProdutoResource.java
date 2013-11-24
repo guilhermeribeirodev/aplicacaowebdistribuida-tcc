@@ -78,8 +78,9 @@ public class ProdutoResource implements Crud<Produto>{
 
     @PUT
     @Path("{id}")
-    public void update(@PathParam("id") String id) {
-        //To change body of implemented methods use File | Settings | File Templates.
+    public Produto update(@PathParam("id") String id, Produto produto) {
+
+        return new Produto();
     }
 
 

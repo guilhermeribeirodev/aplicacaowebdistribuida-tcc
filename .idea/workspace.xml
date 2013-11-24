@@ -2,18 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51348a62-ff89-494f-9dd4-ada61165704d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java" afterPath="$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/org/base/resource/Crud.java" afterPath="$PROJECT_DIR$/src/main/java/br/org/base/resource/Crud.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/org/base/model/Venda.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/org/base/model/Produto.java" afterPath="$PROJECT_DIR$/src/main/java/br/org/base/model/Produto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/org/base/resource/ProdutoResource.java" afterPath="$PROJECT_DIR$/src/main/java/br/org/base/resource/ProdutoResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aplicacaowebdistribuida-tcc.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385232656659" ignored="false" />
+    <file path="/Dummy.txt" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385315119171" ignored="false" />
     <file path="/pom.xml" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383191995021" ignored="false" />
     <file path="/BarServer.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383192417572" ignored="false" />
     <file path="/Server.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383192595224" ignored="false" />
     <file path="/ClienteResource.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385239503193" ignored="false" />
     <file path="/CrudBasico.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383193098636" ignored="false" />
-    <file path="/fragment.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1384892152898" ignored="false" />
+    <file path="/fragment.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385317656238" ignored="false" />
     <file path="/Cliente.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385235054276" ignored="false" />
     <file path="$PROJECT_DIR$/../app_bares/src/main/java/br/org/base/resource/CrudBasico.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383193628480" ignored="false" />
     <file path="/Crud.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385241601480" ignored="false" />
@@ -45,6 +48,8 @@
     <file path="$PROJECT_DIR$/../androidclientb1/src/com/example/androidclientb1/LoginActivity.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1384892084120" ignored="false" />
     <file path="/strings.xml" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1384892503447" ignored="false" />
     <file path="/ImplFacade.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385100336900" ignored="false" />
+    <file path="/Venda.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385317009240" ignored="false" />
+    <file path="/ProdutoResource.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385317257160" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,38 +111,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Server.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java">
+      <file leaf-file-name="Venda.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/model/Venda.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="52" selection-start="976" selection-end="976" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="14" column="0" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="39" selection-start="352" selection-end="352" vertical-scroll-proportion="-3.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cliente.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/model/Cliente.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="33" selection-start="1218" selection-end="1218" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexResource.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/IndexResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="35" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
-              <folding />
+      <file leaf-file-name="diagramadeclasses.uml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/uml/diagramadeclasses.uml">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes>
+                <node x="215.0" y="0.0">br.org.base.model.Cliente</node>
+                <node x="0.0" y="0.0">br.org.base.model.Produto</node>
+                <node x="105.0" y="202.0">br.org.base.model.Venda</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="br.org.base.model.Venda" target="br.org.base.model.Produto">
+                  <point x="-50.0" y="-52.0" />
+                  <point x="155.0" y="177.0" />
+                  <point x="97.5" y="177.0" />
+                  <point x="0.0" y="76.0" />
+                </edge>
+                <edge source="br.org.base.model.Venda" target="br.org.base.model.Cliente">
+                  <point x="50.0" y="-52.0" />
+                  <point x="255.0" y="177.0" />
+                  <point x="312.5" y="177.0" />
+                  <point x="0.0" y="76.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="205.0" y="153.0" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Fields</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -145,16 +162,7 @@
       <file leaf-file-name="ProdutoResource.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/ProdutoResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="93" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClienteResource.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="43" selection-start="638" selection-end="638" vertical-scroll-proportion="-1.7336448">
+            <state line="82" column="29" selection-start="1896" selection-end="1896" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -163,25 +171,7 @@
       <file leaf-file-name="Crud.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/Crud.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="54" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JacksonDBCollection.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/net/vz/mongodb/jackson/mongo-jackson-mapper/1.4.1/mongo-jackson-mapper-1.4.1-sources.jar!/net/vz/mongodb/jackson/JacksonDBCollection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="49" selection-start="1948" selection-end="1948" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProdutoStore.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/MyApp/stores/ProdutoStore.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="42" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
+            <state line="16" column="31" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -205,8 +195,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/js/MyApp/models/Produto.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/MyApp/stores/ProdutoStore.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/MyApp/views/produto/ProdutoGridPanel.js" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/MyApp/models/Cliente.js" />
@@ -221,13 +209,15 @@
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/model/Cliente.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/resource/Crud.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/org/base/resource/ProdutoResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/org/base/model/Venda.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="54" />
+    <option name="x" value="53" />
     <option name="y" value="24" />
-    <option name="width" value="935" />
+    <option name="width" value="1124" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -256,6 +246,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -284,11 +275,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemId" value="uml" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -447,7 +434,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -457,7 +443,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/uml" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -618,19 +604,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -657,6 +630,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -745,8 +731,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="24" width="935" height="1057" extended-state="4" />
-    <editor active="false" />
+    <frame x="53" y="24" width="1124" height="1057" extended-state="4" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -760,7 +746,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.57788163" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46666667" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46666667" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -769,7 +755,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39637598" sideWeight="0.6731183" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3955224" sideWeight="0.53333336" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3268817" sideWeight="0.67890626" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -843,18 +829,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/MyApp/stores/ProdutoStore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="42" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/MyApp/views/cliente/ClienteGridPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="4" selection-start="817" selection-end="817" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/model/Produto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="58" selection-start="929" selection-end="929" vertical-scroll-proportion="0.04491018" />
@@ -900,14 +874,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/ext-4.0.1/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="39" selection-start="352" selection-end="352" vertical-scroll-proportion="-3.125">
+        <state line="15" column="39" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -919,13 +891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/ProdutoResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="93" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/net/vz/mongodb/jackson/mongo-jackson-mapper/1.4.1/mongo-jackson-mapper-1.4.1-sources.jar!/net/vz/mongodb/jackson/JacksonDBCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="49" selection-start="1948" selection-end="1948" vertical-scroll-proportion="0.0">
@@ -933,17 +898,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/Crud.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="54" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
+        <state line="37" column="48" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/Crud.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="43" selection-start="638" selection-end="638" vertical-scroll-proportion="-1.7336448">
+        <state line="16" column="31" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/ProdutoResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="29" selection-start="1896" selection-end="1896" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/model/Venda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uml/diagramadeclasses.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="215.0" y="0.0">br.org.base.model.Cliente</node>
+            <node x="0.0" y="0.0">br.org.base.model.Produto</node>
+            <node x="105.0" y="202.0">br.org.base.model.Venda</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="br.org.base.model.Venda" target="br.org.base.model.Produto">
+              <point x="-50.0" y="-52.0" />
+              <point x="155.0" y="177.0" />
+              <point x="97.5" y="177.0" />
+              <point x="0.0" y="76.0" />
+            </edge>
+            <edge source="br.org.base.model.Venda" target="br.org.base.model.Cliente">
+              <point x="50.0" y="-52.0" />
+              <point x="255.0" y="177.0" />
+              <point x="312.5" y="177.0" />
+              <point x="0.0" y="76.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="205.0" y="153.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>

@@ -64,7 +64,7 @@ public class Server {
             }
         });
 
-        MongoURI mongolabUri = new MongoURI(System.getenv("MONGOLAB_URI") != null ? System.getenv("MONGOLAB_URI") : "mongodb://127.0.0.1:27017/testesozim");
+        MongoURI mongolabUri = new MongoURI(System.getenv("MONGOLAB_URI") != null ? System.getenv("MONGOLAB_URI") : "mongodb://tcc:tcc@ds053808.mongolab.com:53808/heroku_app19811259");
 
 
         Mongo m = new Mongo(mongolabUri);

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51348a62-ff89-494f-9dd4-ada61165704d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/aplicacaowebdistribuida_tcc_Web_exploded.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java" afterPath="$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aplicacaowebdistribuida-tcc.iml" afterPath="$PROJECT_DIR$/aplicacaowebdistribuida-tcc.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java" afterPath="$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aplicacaowebdistribuida-tcc.iws" />
@@ -128,19 +126,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Server.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Server.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="3" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.0">
+            <state line="27" column="78" selection-start="907" selection-end="907" vertical-scroll-proportion="0.0022547913">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClienteResource.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ClienteResource.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="67" selection-start="1487" selection-end="1487" vertical-scroll-proportion="0.40811723">
+            <state line="78" column="40" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -178,8 +176,8 @@
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/resource/Crud.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/resource/ProdutoResource.java" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java" />
       </list>
     </option>
   </component>
@@ -904,16 +902,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="3" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.0">
+        <state line="78" column="40" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="67" selection-start="1487" selection-end="1487" vertical-scroll-proportion="0.40811723">
+        <state line="27" column="78" selection-start="907" selection-end="907" vertical-scroll-proportion="0.0022547913">
           <folding />
         </state>
       </provider>

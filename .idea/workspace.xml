@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51348a62-ff89-494f-9dd4-ada61165704d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java" afterPath="$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java" />
-    </list>
+    <list default="true" id="51348a62-ff89-494f-9dd4-ada61165704d" name="Default" comment="" />
     <ignored path="aplicacaowebdistribuida-tcc.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385439040396" ignored="false" />
@@ -127,19 +125,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Server.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Server.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="53" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.103720404">
+            <state line="48" column="0" selection-start="1619" selection-end="1619" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Procfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Procfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="3" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
+            <state line="1" column="19" selection-start="78" selection-end="78" vertical-scroll-proportion="0.016666668">
               <folding />
             </state>
           </provider>
@@ -388,7 +386,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="MemberChooser.sorted" value="false" />
@@ -909,16 +907,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
+    <entry file="file://$PROJECT_DIR$/system.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="3" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="48" column="0" selection-start="1619" selection-end="1619" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -930,9 +928,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java">
+    <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="53" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.103720404">
+        <state line="1" column="19" selection-start="78" selection-end="78" vertical-scroll-proportion="0.016666668">
           <folding />
         </state>
       </provider>
@@ -955,7 +953,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Web (aplicacaowebdistribuida-tcc)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

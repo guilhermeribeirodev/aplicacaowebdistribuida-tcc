@@ -63,7 +63,7 @@ public class ClienteResource implements Crud<Cliente>{
     public List<Cliente> readAll(@Context UriInfo ui) {
 
 
-        System.out.println("Requisição: "+ui.getRequestUri());
+
 
 
         List<Cliente> lista = new ArrayList<Cliente>();

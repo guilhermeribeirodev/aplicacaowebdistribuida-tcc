@@ -31,7 +31,7 @@ public class Server {
 
     public static String contentUrl;
 
-    private static final String CONTENT_PATH = "";
+    private static final String CONTENT_PATH = "/home";
 
     public static void main(String[] args) throws IOException, URISyntaxException, InterruptedException {
 

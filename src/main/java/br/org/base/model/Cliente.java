@@ -17,15 +17,9 @@ public class Cliente  {
     @Id
     @ObjectId
     private String id;
-
     private String nome;
-
     private String documento;
-
-
-    private DateTime criacao;
-
-
+    private DateTime criacao = new DateTime();
     private int idade;
 
     public Cliente() {
@@ -73,12 +67,11 @@ public class Cliente  {
 
     public DateTime getCriacao() {
 
-        criacao = new DateTime();
-
         return criacao;
     }
 
     public void setCriacao(DateTime criacao) {
+
         this.criacao = criacao;
     }
 

@@ -4,6 +4,8 @@ import net.vz.mongodb.jackson.Id;
 import net.vz.mongodb.jackson.ObjectId;
 import org.joda.time.DateTime;
 
+import java.io.Serializable;
+
 /**
  * Created with IntelliJ IDEA.
  * User: guilherme
@@ -12,18 +14,15 @@ import org.joda.time.DateTime;
  * To change this template use File | Settings | File Templates.
  */
 
-public class Produto {
+public class Produto implements Serializable{
 
     @Id
     @ObjectId
     private String id;
-
     private String nome;
-
     private float valor;
-
     private String serie;
-    private DateTime criacao;
+    private DateTime criacao = new DateTime();
 
 
     public String getId() {
@@ -58,6 +57,15 @@ public class Produto {
         this.serie = serie;
     }
 
+
+    public DateTime getCriacao() {
+        return criacao;
+    }
+
+    public void setCriacao(DateTime criacao) {
+
+        this.criacao = criacao;
+    }
 
     @Override
     public boolean equals(Object o) {

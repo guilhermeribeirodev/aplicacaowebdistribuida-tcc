@@ -1,5 +1,7 @@
 package br.org.base.resource;
 
+import javax.ws.rs.core.Context;
+import javax.ws.rs.core.UriInfo;
 import java.util.List;
 
 /**
@@ -17,7 +19,7 @@ public interface Crud<T> {
 
     public T read(String id);
 
-    public List<T> readAll();
+    public List<T> readAll(@Context UriInfo ui);
 
     public T update(String id, T t);
 

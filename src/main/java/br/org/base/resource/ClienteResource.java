@@ -8,7 +8,9 @@ import net.vz.mongodb.jackson.WriteResult;
 
 import javax.inject.Singleton;
 import javax.ws.rs.*;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.UriInfo;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
@@ -58,7 +60,10 @@ public class ClienteResource implements Crud<Cliente>{
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Cliente> readAll() {
+    public List<Cliente> readAll(@Context UriInfo ui) {
+
+
+        System.out.println("Requisição: "+ui.getRequestUri());
 
 
         List<Cliente> lista = new ArrayList<Cliente>();
@@ -75,6 +80,7 @@ public class ClienteResource implements Crud<Cliente>{
 
         return lista;
     }
+
 
     @PUT
     @Path("{id}")

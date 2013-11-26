@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51348a62-ff89-494f-9dd4-ada61165704d" name="Default" comment="" />
+    <list default="true" id="51348a62-ff89-494f-9dd4-ada61165704d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
+    </list>
     <ignored path="aplicacaowebdistribuida-tcc.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385439040396" ignored="false" />
@@ -15,7 +17,7 @@
     <file path="$PROJECT_DIR$/../app_bares/src/main/java/br/org/base/resource/CrudBasico.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383193628480" ignored="false" />
     <file path="/Crud.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385241601480" ignored="false" />
     <file path="/ClienteTeste.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383289777544" ignored="false" />
-    <file path="/index.html" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385093691290" ignored="false" />
+    <file path="/index.html" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385441209090" ignored="false" />
     <file path="/Cliente.js" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383241610567" ignored="false" />
     <file path="/ClienteGridPanel.js" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383241630431" ignored="false" />
     <file path="/Produto.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385343965882" ignored="false" />
@@ -47,7 +49,6 @@
     <file path="/VendaTeste.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385345867109" ignored="false" />
     <file path="/VendaResource.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385345978221" ignored="false" />
     <file path="/Procfile" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385438929100" ignored="false" />
-    <file path="$PROJECT_DIR$/web/WEB-INF/web.xml" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385439253689" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,10 +135,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Procfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Procfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="19" selection-start="78" selection-end="78" vertical-scroll-proportion="0.016666668">
+            <state line="1" column="69" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexResource.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/IndexResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="85" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="45" selection-start="196" selection-end="196" vertical-scroll-proportion="0.10575793">
               <folding />
             </state>
           </provider>
@@ -180,7 +199,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/ClienteTeste.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/resource/IndexResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/facade/AbstractFacade.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/facade/CrudableFacade.java" />
@@ -195,6 +213,7 @@
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/resource/ClienteResource.java" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
       </list>
     </option>
   </component>
@@ -269,6 +288,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aplicacaowebdistribuida-tcc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aplicacaowebdistribuida-tcc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -809,35 +850,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/net/vz/mongodb/jackson/mongo-jackson-mapper/1.4.1/mongo-jackson-mapper-1.4.1-sources.jar!/net/vz/mongodb/jackson/JacksonDBCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="49" selection-start="1948" selection-end="1948" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uml/diagramadeclasses.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="" y="">br.org.base.model.Cliente</node>
-            <node x="" y="">br.org.base.model.Produto</node>
-            <node x="" y="">br.org.base.model.Venda</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="205.0" y="153.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/local/java/jdk1.7.0_40/src.zip!/java/lang/annotation/ElementType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="12" selection-start="596" selection-end="596" vertical-scroll-proportion="0.16849817" />
@@ -930,7 +942,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="19" selection-start="78" selection-end="78" vertical-scroll-proportion="0.016666668">
+        <state line="1" column="69" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/resource/IndexResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="85" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="45" selection-start="196" selection-end="196" vertical-scroll-proportion="0.10575793">
           <folding />
         </state>
       </provider>

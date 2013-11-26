@@ -17,7 +17,7 @@
     <file path="$PROJECT_DIR$/../app_bares/src/main/java/br/org/base/resource/CrudBasico.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383193628480" ignored="false" />
     <file path="/Crud.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385241601480" ignored="false" />
     <file path="/ClienteTeste.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383289777544" ignored="false" />
-    <file path="/index.html" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385441209090" ignored="false" />
+    <file path="/index.html" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385442110255" ignored="false" />
     <file path="/Cliente.js" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383241610567" ignored="false" />
     <file path="/ClienteGridPanel.js" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383241630431" ignored="false" />
     <file path="/Produto.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385343965882" ignored="false" />
@@ -156,7 +156,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="22" selection-start="352" selection-end="352" vertical-scroll-proportion="0.27675277">
+            <state line="6" column="71" selection-start="222" selection-end="222" vertical-scroll-proportion="0.11070111">
               <folding />
             </state>
           </provider>
@@ -535,6 +535,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ext-4.0.1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1184,7 +1188,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="22" selection-start="352" selection-end="352" vertical-scroll-proportion="0.27675277">
+        <state line="6" column="71" selection-start="222" selection-end="222" vertical-scroll-proportion="0.11070111">
           <folding />
         </state>
       </provider>

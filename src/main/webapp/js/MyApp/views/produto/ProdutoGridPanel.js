@@ -79,7 +79,7 @@ Ext.define('MyApp.views.produto.ProdutoGridPanel', {
 
     },
 
-    plugins: [{
+   /* plugins: [{
         ptype: 'rowexpander',
         rowBodyTpl : [
 
@@ -92,7 +92,7 @@ Ext.define('MyApp.views.produto.ProdutoGridPanel', {
 
 
     ],
-
+*/
     listeners: {
         selectionchange: function(model, records) {
 

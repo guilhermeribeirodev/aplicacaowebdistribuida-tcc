@@ -1,29 +1,34 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-    <title>TCC</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <title>TCC --  file</title>
 
-    <link rel="stylesheet" type="text/css" href="home/js/ext-4.0.1/resources/css/ext-all.css" />
-    <script type="text/javascript" src="home/js/ext-4.0.1/ext-all-42.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/ext-4.0.1/resources/css/ext-all.css" />
+    <script type="text/javascript" src="js/ext-4.0.1/ext-all-42.js"></script>
 
 
     <script type="text/javascript">
 
 
-        Ext.Loader.setPath({
+        Ext.Loader.setConfig({
             enabled: true,
 
-            'MyApp': 'js/MyApp'
+            paths: {
+                'MyApp':  'js/MyApp'
+            }
+
+
         });
+
+
 
 
         Ext.onReady(function(){
 
 
-            Ext.require("MyApp.models.Cliente");
-            Ext.require("MyApp.models.Produto");
-            Ext.require("MyApp.views.cliente.ClienteGridPanel");
-            Ext.require("MyApp.views.produto.ProdutoGridPanel");
+
+
 
 
             var cliente = Ext.create('MyApp.models.Cliente')
@@ -32,7 +37,7 @@
 
             cliente.set('criacao',new Date())
 
-            cliente.save();
+            //cliente.save();
 
 
             var produto = Ext.create('MyApp.models.Produto')
@@ -41,7 +46,7 @@
             produto.set('valor',2.56)
             produto.set('serie','16253176287')
 
-            produto.save()
+           // produto.save()
 
 
 
@@ -59,12 +64,37 @@
                 width: 400,
                 x: 450,
                 y: 450,
-                title: 'Constraining Window, plain: true',
+                title: 'Clientes',
                 closable: false,
                 plain: true,
                 layout: 'fit',
                 items: [
                     Ext.create('MyApp.views.cliente.ClienteGridPanel')
+                ],
+
+                tbar: [
+
+                    {
+                        xtype: 'button',
+                        text: 'Adicionar cliente',
+                        handler : function() {
+                            //rowEditing.cancelEdit();
+
+                            // Create a record instance through the ModelManager
+                            var r = Ext.ModelManager.create({
+                                nome: 'New Guy',
+                                documento: '12312312',
+                                idade: 20
+                               // criacao: new Date()
+                            }, 'MyApp.models.Clientes');
+
+
+                            console.log(r)
+
+                           /* store.insert(0, r);
+                            rowEditing.startEdit(0, 0);*/
+                        }
+                    }
                 ]
             });
             win2.show();
@@ -75,7 +105,7 @@
                 width: 400,
                 x: 100,
                 y: 100,
-                title: 'dfsdfsdfsdf',
+                title: 'Produtos',
                 closable: false,
                 plain: true,
                 layout: 'fit',

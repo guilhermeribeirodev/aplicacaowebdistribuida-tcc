@@ -4,7 +4,7 @@ Ext.define('MyApp.views.cliente.ClienteGridPanel', {
     requires: [
         'MyApp.stores.ClienteStore',
         'MyApp.models.Cliente',
-        'Ext.ux.RowExpander',
+        //'Ext.ux.RowExpander',
         'MyApp.views.cliente.ClienteFormPanel'
 
     ],
@@ -84,7 +84,7 @@ Ext.define('MyApp.views.cliente.ClienteGridPanel', {
 
     },
 
-    plugins: [{
+    /*plugins: [{
         ptype: 'rowexpander',
         rowBodyTpl : [
 
@@ -97,7 +97,7 @@ Ext.define('MyApp.views.cliente.ClienteGridPanel', {
 
 
     ],
-
+*/
     listeners: {
         selectionchange: function(model, records) {
 

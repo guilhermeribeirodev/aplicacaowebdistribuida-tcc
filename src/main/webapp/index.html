@@ -59,7 +59,7 @@
 
 
 
-            var win2 = Ext.create('widget.window', {
+            var winCliente = Ext.create('widget.window', {
                 height: 200,
                 width: 400,
                 x: 450,
@@ -79,6 +79,8 @@
                         text: 'Adicionar cliente',
                         handler : function() {
                             //rowEditing.cancelEdit();
+                           var clientePanel = MyApp.views.cliente.ClienteFormPanel;
+                            winCliente.removeAll(); winCliente.add(clientePanel);
 
                             // Create a record instance through the ModelManager
                             var r = Ext.ModelManager.create({
@@ -97,7 +99,7 @@
                     }
                 ]
             });
-            win2.show();
+            winCliente.show();
 
 
             var win3 = Ext.create('widget.window', {

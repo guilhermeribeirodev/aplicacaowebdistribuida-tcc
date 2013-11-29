@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51348a62-ff89-494f-9dd4-ada61165704d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/MyApp/views/cliente/ClienteGridPanel.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/MyApp/views/cliente/ClienteGridPanel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/org/base/resource/IndexResource.java" afterPath="$PROJECT_DIR$/src/main/java/br/org/base/resource/IndexResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/MyApp/views/produto/ProdutoGridPanel.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/MyApp/views/produto/ProdutoGridPanel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/MyApp/views/cliente/ClienteFormPanel.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/MyApp/views/cliente/ClienteFormPanel.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -21,7 +19,7 @@
     <file path="$PROJECT_DIR$/../app_bares/src/main/java/br/org/base/resource/CrudBasico.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383193628480" ignored="false" />
     <file path="/Crud.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385241601480" ignored="false" />
     <file path="/ClienteTeste.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383289777544" ignored="false" />
-    <file path="/index.html" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385750021743" ignored="false" />
+    <file path="/index.html" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385753689700" ignored="false" />
     <file path="/Cliente.js" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383241610567" ignored="false" />
     <file path="/ClienteGridPanel.js" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1383241630431" ignored="false" />
     <file path="/Produto.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385343965882" ignored="false" />
@@ -53,6 +51,7 @@
     <file path="/VendaTeste.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385345867109" ignored="false" />
     <file path="/VendaResource.java" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385345978221" ignored="false" />
     <file path="/Procfile" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385438929100" ignored="false" />
+    <file path="/ClienteFormPanel.js" changelist="51348a62-ff89-494f-9dd4-ada61165704d" time="1385753807011" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,10 +129,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="40" selection-start="342" selection-end="342" vertical-scroll-proportion="0.19101124">
+            <state line="96" column="62" selection-start="2523" selection-end="2523" vertical-scroll-proportion="-9.166667">
               <folding />
             </state>
           </provider>
@@ -169,7 +168,7 @@
       <file leaf-file-name="Server.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="65" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0">
+            <state line="45" column="0" selection-start="1519" selection-end="1519" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -204,12 +203,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClienteFormPanel.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ClienteFormPanel.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/MyApp/views/cliente/ClienteFormPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="21" column="29" selection-start="525" selection-end="525" vertical-scroll-proportion="0.20571429">
               <folding>
-                <marker date="1382644642000" expanded="false" signature="29:59" placeholder="..." />
+                <marker date="1385753998301" expanded="false" signature="29:59" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -233,7 +232,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/br/org/base/facade/ImplFacade.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/model/Cliente.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/model/Produto.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/model/Venda.java" />
@@ -249,6 +247,7 @@
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/resource/IndexResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/MyApp/views/cliente/ClienteFormPanel.js" />
       </list>
     </option>
   </component>
@@ -965,7 +964,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39569893" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39569893" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -981,7 +980,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42736486" sideWeight="0.6043011" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42736486" sideWeight="0.6043011" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3268817" sideWeight="0.67890626" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1079,15 +1078,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/MyApp/views/cliente/ClienteFormPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1382644642000" expanded="false" signature="29:59" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="56" selection-start="497" selection-end="497" vertical-scroll-proportion="0.0">
@@ -1153,15 +1143,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/org/base/server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="65" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0">
+        <state line="45" column="0" selection-start="1519" selection-end="1519" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="40" selection-start="342" selection-end="342" vertical-scroll-proportion="0.19101124">
+        <state line="96" column="62" selection-start="2523" selection-end="2523" vertical-scroll-proportion="-9.166667">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/MyApp/views/cliente/ClienteFormPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="29" selection-start="525" selection-end="525" vertical-scroll-proportion="0.20571429">
+          <folding>
+            <marker date="1385753998301" expanded="false" signature="29:59" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
